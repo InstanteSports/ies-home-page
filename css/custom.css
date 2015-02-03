@@ -1,0 +1,152 @@
+/*
+ * Globals
+ */
+
+/* Links */
+
+
+/* Custom default button */
+
+/*
+ * Centering Utility
+ */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+/*
+ * Base structure
+ */
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: white;
+  color: white;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.smaller-container {
+  max-width: 1000px;
+}
+
+.logo {
+  margin-top: 30px;
+  max-width: 200px;
+}
+
+/* Intro */
+.intro-header {
+  background-image: url('../assets/img/intro-bg.jpg');
+}
+
+.subscription-input {
+  font-family: 'Oswald', sans-serif;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: white;
+  color: white;
+  font-size: 30px;
+  background-color: transparent;
+  height: 60px;
+  width: 70%;
+}
+
+.subscription-input:hover, .subscription-input:focus, .subscription-input:active {
+  border-color: #ea4242;
+}
+
+.subscription-input::-webkit-input-placeholder {
+  color:rgba(255, 255, 255, 0.4);
+  text-align:center;
+}
+
+.subscription-input:-moz-placeholder {
+  color:rgba(255, 255, 255, 0.4);
+  text-align:center;
+}
+
+.subscription-input::-moz-placeholder {
+  color:rgba(255, 255, 255, 0.4);
+  text-align:center;
+}
+
+.subscription-input::-ms-input-placeholder {
+  color:rgba(255, 255, 255, 0.4);
+  text-align:center;
+}
+
+.subscribe {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 5%;
+  border-radius: 3px;
+  font-size: 30px;
+  width: 70%;
+  background-color: #ea4242;
+}
+
+.subscribe:hover,.subscribe:focus, .subscribe:active {
+  border-color: #d2393b;
+  background-color: #d2393b;
+}
+
+.triangle-cut-out {
+
+  min-height: 20px;
+  position: relative;
+}
+
+.triangle-cut-out:before,
+.triangle-cut-out:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  border-bottom: 20px solid white;
+}
+
+.triangle-cut-out:before {
+  left: 0;
+  border-right: 20px solid transparent;
+}
+
+.triangle-cut-out:after {
+  right: 0;
+  border-left: 20px solid transparent;
+}
+
+/* Content */
+.content {
+  padding-top: 20px;
+}
+
+.content-red {
+  color: #36424f;
+  background-color: white  ;
+}
+
+.content-light-gray {
+  background-color: #242424;
+}
+
+.content-dark-gray {
+  background-color: #202020;
+}
+
+
