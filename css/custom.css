@@ -50,9 +50,9 @@ h2 {
 
 /* Intro */
 .intro-header {
-  background-image: url('../assets/img/intro-bg.jpg');
-  background-position: center top;
-  background-size: 100% auto;
+  background: url('../assets/img/intro-bg.jpg') no-repeat center top fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .subscription-input {
