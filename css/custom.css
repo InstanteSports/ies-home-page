@@ -20,6 +20,7 @@
     text-align:center;
     /* inline-block space fix */
     margin-right:-4px;
+    vertical-align: middle;
 }
 
 /*
@@ -43,16 +44,25 @@ h3 {
   margin-bottom: 35px;
 }
 
-p {
+h4 {
   font-weight: 100;
 }
 
+h6 {
+  font-size: 20px;
+}
+
+p {
+  font-weight: 100;
+  font-size: 14px;
+}
+
 a {
-  color: #ea4242;
+  color: #cf393a;
 }
 
 a:hover, a:active, a:focus {
-  color: #f54b4b;
+  color: #ea4242;
 }
 
 .smaller-container {
@@ -95,22 +105,28 @@ a:hover, a:active, a:focus {
 .subscription-input::-webkit-input-placeholder {
   color:rgba(255, 255, 255, 0.8);
   font-weight: 100;
-  line-height: 38px;
+  line-height: 1.5em;
   text-align:center;
 }
 
 .subscription-input:-moz-placeholder {
   color:rgba(255, 255, 255, 0.8);
+  font-weight: 100;
+  line-height: 1.5em;
   text-align:center;
 }
 
 .subscription-input::-moz-placeholder {
   color:rgba(255, 255, 255, 0.8);
+  font-weight: 100;
+  line-height: 1.5em;
   text-align:center;
 }
 
 .subscription-input::-ms-input-placeholder {
   color:rgba(255, 255, 255, 0.8);
+  font-weight: 100;
+  line-height: 1.5em;
   text-align:center;
 }
 
@@ -123,37 +139,11 @@ a:hover, a:active, a:focus {
   border-radius: 3px;
   font-size: 1.5em;
   width: 70%;
-  background-color: #ea4242;
+  background-color: #cf393a;
 }
 
 .subscribe:hover,.subscribe:focus, .subscribe:active {
-  background-color: #f54b4b;
-}
-
-.triangle-cut-out {
-  margin-top: 10px;
-  min-height: 20px;
-  position: relative;
-}
-
-.triangle-cut-out:before,
-.triangle-cut-out:after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 50%;
-  border-bottom: 20px solid #565b8e;
-}
-
-.triangle-cut-out:before {
-  left: 0;
-  border-right: 30px solid transparent;
-}
-
-.triangle-cut-out:after {
-  right: 0;
-  border-left: 30px solid transparent;
+  background-color: #ea4242;
 }
 
 .learn-more {
@@ -163,21 +153,51 @@ a:hover, a:active, a:focus {
 
 /* Content */
 .content {
-  padding: 30px 0;
+  padding: 30px 0 60px 0;
 }
 
-.blue {
-  color: white;
-  background-color: #355ecb ;
+.description-content {
+  background: url('../assets/img/description-bg.jpg') no-repeat center top fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.description-game-logo {
+  max-width: 180px;
+  margin: 20px auto;
+}
+
+.logo-row {
 }
 
 .white {
-  color: black;
+  color: #3c3c3c;
   background-color: white;
 }
 
-.content-dark-gray {
-  background-color: #202020;
+.gray {
+  color: white;
+  background-color: #3c3c3c;
+}
+
+.iphone-circular {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background: url('../assets/img/2-iphone-right-3.png') no-repeat;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.product-desc {
+  text-align: left;
+}
+
+.product-desc h6 {
+  margin-bottom: 0;
 }
 
 /*
@@ -206,6 +226,7 @@ a:hover, a:active, a:focus {
 
   .subscription-input {
     font-size: 1.1em;
+    line-height: 10px;
     height: 58px;
     width: 90%;
 
