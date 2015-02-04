@@ -33,10 +33,26 @@ body {
 
 h1 {
   font-family: 'Oswald', sans-serif;
+  line-height: 70px;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 
-h2 {
-  font-family: 'Oswald', sans-serif;
+h3 {
+  font-weight: 100;
+  margin-bottom: 35px;
+}
+
+p {
+  font-weight: 100;
+}
+
+a {
+  color: #ea4242;
+}
+
+a:hover, a:active, a:focus {
+  color: #f54b4b;
 }
 
 .smaller-container {
@@ -44,8 +60,9 @@ h2 {
 }
 
 .logo {
-  margin-top: 30px;
-  max-width: 200px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  max-width: 50px;
 }
 
 /* Intro */
@@ -55,47 +72,54 @@ h2 {
   background-size: cover;
 }
 
+.tagline {
+  margin-bottom: 6%;
+}
+
 .subscription-input {
   font-family: 'Oswald', sans-serif;
   border-radius: 3px;
   border-width: 1px;
-  border-color: white;
+  border-color: rgba(255, 255, 255, 0.4);
   color: white;
-  font-size: 1.5em;
+  font-size: 1.3em;
   background-color: transparent;
   height: 60px;
   width: 70%;
 }
 
 .subscription-input:hover, .subscription-input:focus, .subscription-input:active {
-  border-color: #ea4242;
+  border-color: white;
 }
 
 .subscription-input::-webkit-input-placeholder {
-  color:rgba(255, 255, 255, 0.4);
+  color:rgba(255, 255, 255, 0.8);
+  font-weight: 100;
+  line-height: 38px;
   text-align:center;
 }
 
 .subscription-input:-moz-placeholder {
-  color:rgba(255, 255, 255, 0.4);
+  color:rgba(255, 255, 255, 0.8);
   text-align:center;
 }
 
 .subscription-input::-moz-placeholder {
-  color:rgba(255, 255, 255, 0.4);
+  color:rgba(255, 255, 255, 0.8);
   text-align:center;
 }
 
 .subscription-input::-ms-input-placeholder {
-  color:rgba(255, 255, 255, 0.4);
+  color:rgba(255, 255, 255, 0.8);
   text-align:center;
 }
 
 .subscribe {
+  white-space: normal;
   font-family: 'Oswald', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 20px;
-  margin-bottom: 5%;
+  margin-bottom: 10px;
   border-radius: 3px;
   font-size: 1.5em;
   width: 70%;
@@ -103,11 +127,11 @@ h2 {
 }
 
 .subscribe:hover,.subscribe:focus, .subscribe:active {
-  border-color: #d2393b;
-  background-color: #d2393b;
+  background-color: #f54b4b;
 }
 
 .triangle-cut-out {
+  margin-top: 10px;
   min-height: 20px;
   position: relative;
 }
@@ -119,31 +143,37 @@ h2 {
   position: absolute;
   bottom: 0;
   width: 50%;
-  border-bottom: 20px solid white;
+  border-bottom: 20px solid #565b8e;
 }
 
 .triangle-cut-out:before {
   left: 0;
-  border-right: 20px solid transparent;
+  border-right: 30px solid transparent;
 }
 
 .triangle-cut-out:after {
   right: 0;
-  border-left: 20px solid transparent;
+  border-left: 30px solid transparent;
+}
+
+.learn-more {
+  color: white;
+  margin: 40px 0;
 }
 
 /* Content */
 .content {
-  padding-top: 20px;
+  padding: 30px 0;
 }
 
-.content-red {
-  color: #36424f;
-  background-color: white  ;
+.blue {
+  color: white;
+  background-color: #355ecb ;
 }
 
-.content-light-gray {
-  background-color: #242424;
+.white {
+  color: black;
+  background-color: white;
 }
 
 .content-dark-gray {
@@ -155,19 +185,36 @@ h2 {
  */
 @media screen and (max-device-width: 480px) {
   h1 {
-    font-size: 1.8em;
+    margin-top: 10px;
+    font-size: 1.6em;
+    line-height: 36px;
+    letter-spacing: 1px;
   }
 
   h2 {
-    font.size: 1.5em;
+    font-size: 1.5em;
+    line-height: 30px;
   }
 
-  .subscribe {
-    font-size: .8em;
+  h3 {
+    font-size: 1.1em;
+  }
+
+  .logo {
+    width: 30px;
   }
 
   .subscription-input {
-    font-size: 1.0em;
+    font-size: 1.1em;
+    height: 58px;
+    width: 90%;
+
+  }
+  .subscribe {
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    margin-top: 15px;
   }
 
 }
