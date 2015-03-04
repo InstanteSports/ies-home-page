@@ -1,11 +1,8 @@
-/*
- * Globals
+/*!
+ * Start Bootstrap - The Big Picture HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
-/* Links */
-
-
-/* Custom default button */
 
 /*
  * Centering Utility
@@ -23,79 +20,101 @@
     vertical-align: middle;
 }
 
-/*
- * Base structure
- */
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-  background-color: black;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background: none;
+    color: white;
+    font-weight: 100;
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
-  line-height: 70px;
-  letter-spacing: 1px;
-  font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 100;
 }
 
-h3 {
-  font-weight: 100;
-  margin-bottom: 35px;
+h1 b {
+    font-weight: 400;
 }
 
-h4 {
-  font-weight: 100;
-}
-
-h6 {
-  font-size: 20px;
+h2 {
+    font-size: 30px;
+    font-weight: 100;
 }
 
 p {
-  font-weight: 100;
-  font-size: 14px;
+    font-size: 15px;
 }
 
 a {
-  color: #cf393a;
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom:1px dotted;
+
 }
 
-a:hover, a:active, a:focus {
-  color: #ea4242;
-}
-
-.smaller-container {
-  max-width: 1000px;
+a:hover, a:visited, a:active  {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
 }
 
 .logo {
-  margin-top: 60px;
+  max-width: 100px;
   margin-bottom: 10px;
-  max-width: 50px;
 }
 
-/* Intro */
-.intro-header {
-  background: url('../assets/img/intro-bg.jpg') no-repeat center top fixed;
+
+.full {
+  background: url('../assets/img/intro-bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
-.tagline {
-  margin-bottom: 6%;
+
+.description {
+    margin-bottom: 35px;
+}
+.description-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    vertical-align: middle;
 }
 
+.description-card p {
+    margin: 10px 0;
+}
+
+.coming-soon {
+    font-size: 50px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+    font-weight: 100;
+}
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    opacity: 1;
+}
+
+.coming-soon:hover, .coming-soon:focus, .coming-soon:active {
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Mailing List */
 .subscription-input {
-  font-family: 'Oswald', sans-serif;
   border-radius: 3px;
   border-width: 1px;
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
   color: white;
   font-size: 1.3em;
   background-color: transparent;
   height: 60px;
-  width: 70%;
 }
 
 .subscription-input:hover, .subscription-input:focus, .subscription-input:active {
@@ -138,114 +157,56 @@ a:hover, a:active, a:focus {
   margin-bottom: 10px;
   border-radius: 3px;
   font-size: 1.5em;
-  width: 70%;
   background-color: #cf393a;
+  border-color: transparent;
+  width: 100%;
 }
 
 .subscribe:hover,.subscribe:focus, .subscribe:active {
   background-color: #ea4242;
-}
-
-.learn-more {
-  color: white;
-  margin: 40px 0;
-}
-
-/* Content */
-.content {
-  padding: 30px 0 60px 0;
-}
-
-.description-content {
-  background: url('../assets/img/description-bg.jpg') no-repeat center top fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-
-.description-game-logo {
-  max-width: 180px;
-  margin: 20px auto;
-}
-
-.logo-row {
-}
-
-.white {
-  color: #3c3c3c;
-  background-color: white;
-}
-
-.gray {
-  color: white;
-  background-color: #3c3c3c;
-}
-
-.iphone-circular {
-  width: 250px;
-  height: 250px;
-  border-radius: 125px;
-  -webkit-border-radius: 125px;
-  -moz-border-radius: 125px;
-  background: url('../assets/img/2-iphone-right-3.png') no-repeat;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-}
-
-.product-desc {
-  text-align: left;
-}
-
-.product-desc h6 {
-  margin-bottom: 0;
+  border-color: transparent;
 }
 
 /*
  * Media Screen
  */
 @media screen and (max-device-width: 480px) {
+  .logo {
+    max-width: 60px;
+    margin-bottom: 5px;
+  }
+
   h1 {
-    margin-top: 10px;
-    font-size: 1.6em;
-    line-height: 36px;
-    letter-spacing: 1px;
+    font-size: 30px;
   }
 
   h2 {
-    font-size: 1.5em;
-    line-height: 30px;
+    font-size: 20px;
   }
 
-  h3 {
-    font-size: 1.1em;
+  .description-card {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .logo {
-    width: 30px;
+  .description-card p {
+    font-size: 10px;
+  }
+
+  .description-card-no-border {
+    border-bottom: 1px solid transparent;
   }
 
   .subscription-input {
-    font-size: 1.1em;
-    line-height: 10px;
-    height: 58px;
-    width: 90%;
-
+    font-size: 15px;
+    line-height: 20px;
+    height: 54px;
   }
+
   .subscribe {
     font-size: 20px;
     margin-bottom: 20px;
-    width: 90%;
     margin-top: 15px;
   }
 
 }
-
-
-
-
-
-
-
-
-
 
