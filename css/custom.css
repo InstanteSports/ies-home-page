@@ -26,13 +26,13 @@ body {
 	margin-bottom: 50px;
 	background: none;
     color: white;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
-    font-weight: 100;
+    font-weight: 110;
 }
 
 h1 b {
@@ -45,7 +45,7 @@ h2 {
 }
 
 p {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 a {
@@ -80,10 +80,11 @@ a:hover, a:visited, a:active  {
 .description-card {
     background-color: rgba(255, 255, 255, 0.1);
     vertical-align: middle;
+    width: 100%;
 }
 
 .description-card p {
-    margin: 10px 0;
+    padding: 10px 5px;
 }
 
 .coming-soon {
