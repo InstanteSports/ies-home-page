@@ -164,9 +164,11 @@ a:hover, a:visited, a:active  {
   width: 100%;
 }
 
-.subscribe:hover,.subscribe:focus, .subscribe:active {
+.subscribe:hover,.subscribe:focus, .subscribe:active, .subscribe:visited, .subscribe:focus {
   background-color: #ea4242;
   border-color: transparent;
+  color: white;
+  outline: 0 !important;
 }
 
 /*
