@@ -76,7 +76,7 @@ a:hover, a:visited, a:active  {
 
 
 .description {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 .description-card {
     background-color: rgba(255, 255, 255, 0.1);
@@ -89,23 +89,20 @@ a:hover, a:visited, a:active  {
 }
 
 .coming-soon {
-    font-size: 50px;
+    font-size: 15px;
     border-radius: 3px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.1);
     font-weight: 300;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.1);
-    color: white;
+  background-color: transparent;
     opacity: 1;
 }
 
 .coming-soon:hover, .coming-soon:focus, .coming-soon:active {
-  border-color: white;
-  background-color: rgba(255, 255, 255, 0.1);
+
 }
 
 /* Mailing List */
@@ -155,7 +152,7 @@ a:hover, a:visited, a:active  {
   white-space: normal;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 10px;
   border-radius: 3px;
   font-size: 1.5em;
