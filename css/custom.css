@@ -31,7 +31,7 @@ body {
 
 h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 110;
 }
 
@@ -40,7 +40,7 @@ h1 b {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
 }
 
@@ -50,7 +50,7 @@ p {
 }
 
 a {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 1.0);
     border-bottom:1px dotted;
 
 }
@@ -61,10 +61,15 @@ a:hover, a:visited, a:active  {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 60px;
   margin-bottom: 10px;
 }
 
+
+.phone {
+  max-width: 300px;
+  margin-bottom: 40px;
+}
 
 .full {
   background: url('../assets/img/intro-bg.jpg') no-repeat center center fixed;
@@ -159,6 +164,7 @@ a:hover, a:visited, a:active  {
   background-color: #cf393a;
   border-color: transparent;
   width: 100%;
+  line-height: 1.8em;
 }
 
 .subscribe:hover,.subscribe:focus, .subscribe:active, .subscribe:visited, .subscribe:focus {
@@ -166,6 +172,10 @@ a:hover, a:visited, a:active  {
   border-color: transparent;
   color: white;
   outline: 0 !important;
+}
+
+.left {
+  margin-top: 30px;
 }
 
 /*
@@ -206,8 +216,16 @@ a:hover, a:visited, a:active  {
 
   .subscribe {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 15px;
+    line-height: 1.2em;
+  }
+
+  .left {
+    margin-top: 0px;
+  }
+  .phone {
+    margin-top: 20px;
   }
 
 }
