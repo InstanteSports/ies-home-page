@@ -198,9 +198,13 @@
                     var data = {
                         "email": email_val
                     };
+                    var headers = {
+                        "Content-Type": "application/json"
+                    };
                     // Assume it works lol
                     $.post(
-                        "http://ies-cdn.net/mc/", data 
+                        "http://ies-cdn.net/mc/",
+                        JSON.stringify(data)
                     );
                     $('#email_form').hide();
                     $('#email_success').show();
