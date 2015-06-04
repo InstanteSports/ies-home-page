@@ -178,6 +178,16 @@ a:hover, a:visited, a:active  {
   margin-top: 30px;
 }
 
+#email_error {
+  margin-top: 5px;
+  color: #e75f5f;
+  font-size: 1.3em;
+}
+
+#email_success a {
+  border-bottom:0;
+}
+
 /*
  * Media Screen
  */
