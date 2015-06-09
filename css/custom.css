@@ -7,6 +7,8 @@
 /*
  * Centering Utility
  */
+
+
 .row-centered {
     text-align:center;
 }
@@ -239,4 +241,12 @@ a:hover, a:visited, a:active  {
   }
 
 }
+
+.timer{
+  margin: 0;
+  font-size: 1.2em;
+  color: black;
+}
+
+
 
