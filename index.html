@@ -59,9 +59,6 @@
           }
         });
       }
-      FB.Event.subscribe('message.send', function(targetUrl) {
-        ga('send', 'event', 'social', 'click', 'fb_follow', 2)
-      });
     </script>
     <!-- Page Content -->
     <div class="container-fluid">
@@ -210,6 +207,11 @@
           var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
           return regex.test(email);
         }
+        $(document).ready(function(){
+          FB.Event.subscribe('message.send', function(targetUrl) {
+            ga('send', 'event', 'social', 'click', 'fb_follow', 2)
+          });
+        });
 
         $('#mc-embedded-subscribe-form').submit(
             function() {
