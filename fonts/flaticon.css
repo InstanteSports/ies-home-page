@@ -1,0 +1,118 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+font-family: Flaticon;
+font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}.flaticon-arrows41:before {
+	content: "\e000";
+}
+.flaticon-cellphone64:before {
+	content: "\e001";
+}
+.flaticon-christmas221:before {
+	content: "\e002";
+}
+.flaticon-circuit2:before {
+	content: "\e003";
+}
+.flaticon-clipboard84:before {
+	content: "\e004";
+}
+.flaticon-clock34:before {
+	content: "\e005";
+}
+.flaticon-cloud299:before {
+	content: "\e006";
+}
+.flaticon-cloud79:before {
+	content: "\e007";
+}
+.flaticon-clouds12:before {
+	content: "\e008";
+}
+.flaticon-cogwheel22:before {
+	content: "\e009";
+}
+.flaticon-data56:before {
+	content: "\e00a";
+}
+.flaticon-dollars42:before {
+	content: "\e00b";
+}
+.flaticon-fire39:before {
+	content: "\e00c";
+}
+.flaticon-flat18:before {
+	content: "\e00d";
+}
+.flaticon-halloween183:before {
+	content: "\e00e";
+}
+.flaticon-hot72:before {
+	content: "\e00f";
+}
+.flaticon-key171:before {
+	content: "\e010";
+}
+.flaticon-layers4:before {
+	content: "\e011";
+}
+.flaticon-light28:before {
+	content: "\e012";
+}
+.flaticon-male40:before {
+	content: "\e013";
+}
+.flaticon-one56:before {
+	content: "\e014";
+}
+.flaticon-one62:before {
+	content: "\e015";
+}
+.flaticon-paper35:before {
+	content: "\e016";
+}
+.flaticon-raining2:before {
+	content: "\e017";
+}
+.flaticon-round27:before {
+	content: "\e018";
+}
+.flaticon-share31:before {
+	content: "\e019";
+}
+.flaticon-shield86:before {
+	content: "\e01a";
+}
+.flaticon-small113:before {
+	content: "\e01b";
+}
+.flaticon-snowflake41:before {
+	content: "\e01c";
+}
+.flaticon-sun19:before {
+	content: "\e01d";
+}
+.flaticon-tea21:before {
+	content: "\e01e";
+}
+.flaticon-thumbs21:before {
+	content: "\e01f";
+}
+.flaticon-user65:before {
+	content: "\e020";
+}
+.flaticon-users2:before {
+	content: "\e021";
+}

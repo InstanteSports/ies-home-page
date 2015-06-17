@@ -1,0 +1,28 @@
+/* Color */
+.fact-number .factor,
+.list-item.big li:hover > i,
+.download-now .btn-3d:before {
+	color:#90c963 ;
+}
+
+/* Background Color */
+.sticky-wrapper.is-sticky .sticky-navigation,
+#top-section .collapse.in, 
+#header-top #sticky-section-sticky-wrapper, 
+#header-top #sticky-section,
+#navigation .dropdown-menu,
+.service-more:hover,
+.blog .btn:hover,
+.contact .btn,
+.copyright .copyright-social-icon i:hover, 
+.footer-social-icon i:hover, 
+.footer .btn-default, 
+.filter-menu ul li.active,
+.twitter-feed,
+.twitter-feed i,
+.highlight,
+.subscribe-form-submit,
+.social-media i:hover,
+.download-now .btn{
+	background-color: #90c963;
+}

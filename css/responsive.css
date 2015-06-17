@@ -1,0 +1,156 @@
+/* ================================= Responsive CSS ================================= */
+
+@media only screen and (min-width:1200px) {
+	.list-item{
+		padding-top:50px;	
+	}
+	
+	.benfits-section .list-item li {
+    	padding-bottom: 0;
+	}
+}
+
+@media only screen and (min-width:991px) and (max-width:1080px) {
+	h2{
+		padding-top:10px;
+	}
+	.features{
+		margin-left:100px
+	}
+	
+	.benfits-section .list-item li {
+    	padding-bottom: 0;
+	}
+}
+/* ---------- MAX 991px ---------- */
+@media only screen and (max-width:991px) {
+	
+	.classic-header .app-image{
+		margin-top:30px;
+	}
+	.benfits-section .list-item .bor-icon:before{
+		position:relative;
+	}
+		
+	.count-box{
+		border:1px dotted #888888;
+		margin:10px;
+		padding:20px;	
+	}
+	
+	.classic-header,
+	.app-image,
+	h2{
+		text-align:center;
+	} 
+	.contact-form .col-md-6, .contact-form .col-md-12 {
+		padding:0 15px;
+	}
+	
+}
+
+
+/* ---------- MAX 768PX ---------- */
+@media only screen and (max-width:768px){
+	/* Menu Navbar */
+	.nav > li > a{
+		padding:10px;
+	}
+	h2{		
+		text-align:center;
+	}
+	.benfits-section .list-item li ,
+	.benfits-section .list-item li + li,
+	.benfits-section .list-item li + li + li,
+	.benfits-section .list-item li + li + li + li,
+	.benfits-section .list-item li + li + li + li + li{
+		padding-left:10px;
+	}
+	
+}
+/* ---------- MAX 767PX ---------- */
+@media only screen and (max-width:767px) {
+	/* Navbar */
+	.navbar{
+		min-height:10px;
+	}
+	.top-container{
+		padding:10px 10px 2px;
+	}
+	.top-navbar ul.nav a {
+		padding:10px 0px;
+	}
+	#top-section-sticky-wrapper.is-sticky .top-container {
+		padding:5px 10px 0px;
+	}
+	#header-top #top-section-sticky-wrapper.is-sticky .top-container{
+		padding:5px 10px 0px;
+	}
+	
+	/* Counting */
+	.counting i, .counting .factor{
+		padding-bottom:5%;
+	}
+	
+	/* Testimonials */
+	.owl-theme .owl-controls .owl-buttons div:before {
+		display:none;
+	}
+	
+	/* Copyright */
+	.copyright h4, .copyright-social-icon{
+		text-align:center;
+		padding:10px 0px;
+	}
+	
+	/* Disable Animations */
+	.animated {
+		visibility: visible !important;
+	  	-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	
+}
+/* ---------- MAX 640PX ---------- */
+@media only screen and (max-width:640px) {
+	.features-section .list-item li{
+		width:100%;
+	}
+}
+
+/* ---------- MAX 480PX ---------- */
+@media only screen and (max-width:480px) {
+
+h3 {
+	padding:0;
+	margin-bottom:10px;
+	margin-top:0px;
+}
+.vcenter{
+	height:auto;
+}
+.big i{
+	font-size:50px;
+}
+
+.left-absolute,
+.right-absolute{
+	position: inherit;
+	text-align:center;
+	margin:0px auto;
+}
+.right-absolute{
+	position: inherit;
+	text-align:center;
+	margin:0px auto;	
+}
+.item-right,
+.item-left{
+	margin-left:0px;
+	margin-right:0px;
+	text-align:center;
+}
+}
