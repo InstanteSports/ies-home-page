@@ -12,7 +12,87 @@ $(window).load(function() {
 
 	$("#pageloader").delay(800).fadeOut("slow");
 	
+/* --------------------------------------------
+
+Carousel-slider
+
+-------------------------------------------- */	
+	
+	'use strict';
+	
+	$(".owl-demo").owlCarousel({
+
+		items : 1,
+		itemsDesktop : [1199, 1],
+		itemsDesktopSmall : [991, 1],
+		itemsTablet : [768, 1],
+		itemsTabletSmall : false,
+		itemsMobile : [479, 1],
+
+		lazyLoad : true,
+
+		autoPlay: false,
+
+		navigation : false
+
+	});
+	
+	
+	
+/* --------------------------------------------
+
+Text Slider Home Page
+
+-------------------------------------------- */
+
+	  'use strict';
+
+
+
+      $('.text-slider').flexslider({
+
+        animation: "slide",
+
+		selector: ".slide-text li",
+
+		controlNav: false,
+
+		directionNav: false,
+
+		slideshowSpeed: 4000,
+
+		touch: true,
+
+		useCSS: false,
+
+		direction: "vertical",
+
+        before: function(slider){        
+
+		 var height = $('.text-slider').find('.flex-viewport').innerHeight();
+
+		 $('.text-slider').find('li').css({ height: height + 'px' });
+
+        }		
+
+      });
+
+
 });
+
+
+/* --------------------------------------------
+
+Home Background Super Slider 
+
+-------------------------------------------- */
+
+$('#slides').superslides({
+
+	animation: 'fade',
+
+});
+
 
 
 
@@ -179,6 +259,148 @@ $(function() {
 	
 
 
+
+/* --------------------------------------------
+
+ Video Script
+
+-------------------------------------------- */
+
+$(".player").mb_YTPlayer();	
+
+
+
+/* --------------------------------------------
+
+ Count Factors
+
+-------------------------------------------- */  
+
+jQuery(function() {
+
+	$(".fact-number").appear(function(){
+
+		$('.fact-number').each(function(){
+
+		dataperc = $(this).attr('data-perc'),
+
+			$(this).find('.factor').delay(6000).countTo({
+
+				from: 10,
+
+				to: dataperc,
+
+				speed: 3000,
+
+				refreshInterval: 50,	
+
+			});  
+
+		});
+
+	});
+
+});
+
+ 
+
+(function($) {
+
+	'use strict';
+
+	$.fn.countTo = function(options) {
+
+		// merge the default plugin settings with the custom options
+
+		options = $.extend({}, $.fn.countTo.defaults, options || {});
+
+	
+
+		// how many times to update the value, and how much to increment the value on each update
+
+		var loops = Math.ceil(options.speed / options.refreshInterval),
+
+			increment = (options.to - options.from) / loops;
+
+	
+
+		return $(this).each(function() {
+
+			var _this = this,
+
+				loopCount = 0,
+
+				value = options.from,
+
+				interval = setInterval(updateTimer, options.refreshInterval);
+
+	
+
+			function updateTimer() {
+
+				value += increment;
+
+				loopCount++;
+
+				$(_this).html(value.toFixed(options.decimals));
+
+	
+
+				if (typeof(options.onUpdate) == 'function') {
+
+					options.onUpdate.call(_this, value);
+
+				}
+
+	
+
+				if (loopCount >= loops) {
+
+					clearInterval(interval);
+
+					value = options.to;
+
+	
+
+					if (typeof(options.onComplete) == 'function') {
+
+						options.onComplete.call(_this, value);
+
+					}
+
+				}
+
+			}
+
+		});
+
+	};
+
+	
+
+	$.fn.countTo.defaults = {
+
+		from: 0,  // the number the element should start at
+
+		to: 100,  // the number the element should end at
+
+		speed: 1000,  // how long it should take to count between the target numbers
+
+		refreshInterval: 100,  // how often the element should be updated
+
+		decimals: 0,  // the number of decimal places to show
+
+		onUpdate: null,  // callback method for every time the element is updated,
+
+		onComplete: null,  // callback method for when the element finishes updating
+
+	};
+
+	
+
+})(jQuery); 
+
+
 			
 			
 jQuery(document).ready(function() { 
@@ -204,7 +426,7 @@ Screenshot Scripts
 
 		'use strict';
 		jQuery("#screenshot").owlCarousel({
-			items : 4,
+			items : 5,
 			lazyLoad : true,
 			autoPlay: false,
 			navigation : false,
@@ -691,132 +913,24 @@ Portfolio Scripts
 });	   
 
 
-/* --------------------------------------------
 
- Count Factors
 
--------------------------------------------- */  
 
-jQuery(function() {
+/* -------------------------------------------- 
 
-	$(".fact-number").appear(function(){
+ Blog Flex Slider
 
-		$('.fact-number').each(function(){
+-------------------------------------------- */
 
-		dataperc = $(this).attr('data-perc'),
+$('.flexslider').flexslider({
 
-			$(this).find('.factor').delay(6000).countTo({
+	animation: 'fade',
 
-				from: 10,
+	slideshow: false,
 
-				to: dataperc,
+	animationLoop: false,
 
-				speed: 3000,
-
-				refreshInterval: 50,	
-
-			});  
-
-		});
-
-	});
+	controlNav: false
 
 });
 
- 
-
-(function($) {
-
-	'use strict';
-
-	$.fn.countTo = function(options) {
-
-		// merge the default plugin settings with the custom options
-
-		options = $.extend({}, $.fn.countTo.defaults, options || {});
-
-	
-
-		// how many times to update the value, and how much to increment the value on each update
-
-		var loops = Math.ceil(options.speed / options.refreshInterval),
-
-			increment = (options.to - options.from) / loops;
-
-	
-
-		return $(this).each(function() {
-
-			var _this = this,
-
-				loopCount = 0,
-
-				value = options.from,
-
-				interval = setInterval(updateTimer, options.refreshInterval);
-
-	
-
-			function updateTimer() {
-
-				value += increment;
-
-				loopCount++;
-
-				$(_this).html(value.toFixed(options.decimals));
-
-	
-
-				if (typeof(options.onUpdate) == 'function') {
-
-					options.onUpdate.call(_this, value);
-
-				}
-
-	
-
-				if (loopCount >= loops) {
-
-					clearInterval(interval);
-
-					value = options.to;
-
-	
-
-					if (typeof(options.onComplete) == 'function') {
-
-						options.onComplete.call(_this, value);
-
-					}
-
-				}
-
-			}
-
-		});
-
-	};
-
-	
-
-	$.fn.countTo.defaults = {
-
-		from: 0,  // the number the element should start at
-
-		to: 100,  // the number the element should end at
-
-		speed: 1000,  // how long it should take to count between the target numbers
-
-		refreshInterval: 100,  // how often the element should be updated
-
-		decimals: 0,  // the number of decimal places to show
-
-		onUpdate: null,  // callback method for every time the element is updated,
-
-		onComplete: null,  // callback method for when the element finishes updating
-
-	};
-
-	
-
-})(jQuery); 
