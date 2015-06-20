@@ -45,7 +45,7 @@
 
 /* =========================== GLOBAL STYLES ============================== */
 body {
-	color:#909ba3;
+	color:#ffffff;
 	font-size:15px;
 	font-weight:300;
 	padding: 0;
@@ -343,7 +343,7 @@ a.expand {
 	font-size: 18px;
 	font-weight: 300;
 	padding:10px 0px;
-	color: #909ba3;
+	color: #ffffff;
 	line-height: 1.8;
 }
 /* ------------- Sticky Container ------------- */
@@ -599,7 +599,7 @@ a.expand {
 	position: relative;	
 }
 
-.dark2 h2{
+.dark2 h2, .hdark h2{
 	font-size:40px;
 	line-height:1.2;
 	padding-top:50px;
@@ -653,7 +653,7 @@ a.expand {
 	line-height:65px;
 	text-align:center;
 	font-size:30px;
-	border:1px solid #909ba3;
+	border:1px solid #ffffff;
 	border-radius:50%;
 }
 
@@ -669,7 +669,7 @@ a.expand {
 	line-height:35px;
 	text-align:center;
 	font-size:15px;
-	border:1px solid #909ba3;
+	border:1px solid #ffffff;
 	border-radius:50%;
 }
 .small .list-title{
@@ -725,7 +725,7 @@ a.expand {
 }
 .additional-features{
 	position:relative;
-	color:#909ba3;
+	color:#ffffff;
 	line-height:2;
 	text-align:center;
 }
@@ -786,7 +786,7 @@ a.expand {
 /* =========================== PRICING TABLE SECTION ============================== */
 .price-table{
 	background-color:#FFFFFF;
-	border-bottom:2px solid #909ba3;
+	border-bottom:2px solid #ffffff;
 }
 .container.pricing-inner {
     padding-top: 60px;
@@ -906,7 +906,7 @@ a.expand {
 /* =========================== OUR ACHIEVEMENT SECTION ============================== */
 .counting{
 	background:#FFFFFF;
-	border-top:2px solid #909ba3;
+	border-top:2px solid #ffffff;
 }
 .container.counting-inner {
     padding-top: 60px;
@@ -914,7 +914,7 @@ a.expand {
 }
 .counting h3{
 	margin: 0 auto;
-	color:#909ba3;
+	color:#ffffff;
 	padding: 5px 0px;
 }
 .counting-box{
@@ -1003,7 +1003,7 @@ a.expand {
 /* =========================== HOW IT WORKS SECTION ============================== */
 .how-it-works{
 	background:#FFFFFF;
-	border-bottom:2px solid #909ba3;
+	border-bottom:2px solid #ffffff;
 }	
 .container.how-it-works-inner {
     padding-top: 90px;
@@ -1210,6 +1210,11 @@ bg-text {
 }
 .flickr{
 		background-color:#f14c8e;
+}
+.community{
+		text-align: center;
+		padding-top: 25%;
+		font-size: 22px;
 }
 
 
@@ -1533,7 +1538,7 @@ bg-text {
 /* =========================== CONTACT US SECTION ============================== */
 .contact{
 	background:url(../images/contact.jpg);
-	border-top:2px solid #909ba3;
+	border-top:2px solid #fffffff;
 }
 
 .container.contact-inner {
@@ -1645,7 +1650,7 @@ bg-text {
 .btn.bg-color:hover{
 	color:#fff;
 	background: transparent;
-	border:1px solid #35495d;
+	border:1px solid #ffffff;
 }
 
 
@@ -1655,7 +1660,7 @@ bg-text {
 
 .social-media{
 	text-align:center;
-	border-top:1px solid #35495d;
+	border-top:1px solid #ffffff;
 	padding-top:30px;
 }
 .social-media i{
@@ -1672,8 +1677,8 @@ bg-text {
 	font-size:20px;
 	color:#ffffff;
 	background:transparent;
-	border-top:1px solid #35495d;
-	border-bottom:1px solid #35495d;
+	border-top:1px solid #ffffff;
+	border-bottom:1px solid #ffffff;
 }
 
 /* =========================== Copyrights ============================== */
@@ -2410,7 +2415,7 @@ blockquote{
 #portfolio{
 	background:#f2f6fa;
 	padding-bottom: 80px;
-	border-bottom:2px solid #909ba3;
+	border-bottom:2px solid #ffffff;
 	overflow-x:hidden;
 }
 .container.work-inner {
@@ -2906,27 +2911,27 @@ blockquote{
 	background-color:#5a6f84;
 }
 .dark{
-	color:#909ba3;
+	color:#ffffff;
 }
 .dark h2{
 	color:#ffffff !important;
 }
 .dark .desc{
-	color:#909ba3;
+	color:#ffffff;
 }
 .dark i{
-	color:#909ba3;
+	color:#fffffff;
 }
 
 /* Dark2 */
 .dark2{
 	color:#f0f0f0;
-	background-color:#2c3e50;
+	background-color:#871b24;
 }
 
 .hdark{
 	color:#f0f0f0;
-	background-color:#1d2c39;
+	background-color:#330505;
 };
 
 /* BG Shapes*/
@@ -3035,7 +3040,7 @@ blockquote{
 	color:#ffffff;
 }
 .dark-bg p{
-	color:#909ba3;
+	color:#ffffff;
 }
 .owl-theme .owl-controls .owl-page span{
 	background-color:#ffffff;
