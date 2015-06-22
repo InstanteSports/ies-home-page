@@ -96,3 +96,11 @@
 .shortcodes .testimonial .testimonial2-inner .testimonial-content:hover {
 	border-bottom-color:#e74c3c;
 }
+
+.title:before {
+    background:none !important;
+}
+
+.title h2:before {
+    background:none !important;
+}
