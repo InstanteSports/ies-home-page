@@ -28,6 +28,7 @@
 	<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
 	<link href="css/YTPlayer.css" rel="stylesheet" type="text/css" />
 	<link href="css/tweet-carousel.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	
 	<!-- Main Style -->
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -38,6 +39,12 @@
 	<link href="css/color-schemes/red.css" id="changeable-colors" rel="stylesheet" type="text/css" /> 	
 </head>
 <body class="dark-version">
+
+    <!--SOCIAL static -->
+    <div style="position:absolute; top:7px; right:7px; font-size:2em; z-index:100; color:#FFFFFF;">
+        <a href="https://www.facebook.com/instantesports" style="text-decoration:none; border-bottom:0;" onclick="trackSocialLink('https://www.facebook.com/instantesports'); return false;"><i class="fa fa-facebook-official" style="text-decoration:none; border-bottom:0; margin-right:3px;"></i></a>
+        <a href="https://twitter.com/instantesports" style="text-decoration:none; border-bottom:0;" onclick="trackSocialLink('https://twitter.com/instantesports'); return false;"><i class="fa fa-twitter-square" style="text-decoration:none; border-bottom:0; margin-right:10px"></i></a>
+    </div>
 
 	<!-- Page Loader -->
 	<div id="pageloader">
@@ -124,7 +131,7 @@
 										<!-- Button -->
 										<a target="_blank" href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229" class="btn slide-btn btn-darkblue">Download for iPhone <i class="fa fa-apple"></i></a>
 										<!-- Button -->
-										<a target="_blank" href="#" class="btn slide-btn white-bg">Sign Up for Android <i class="fa fa-android"></i></a>
+										<a target="_blank" href="#" id="android_btn" class="btn slide-btn white-bg">Sign Up for Android <i class="fa fa-android"></i></a>
 									</div>
 								</div>
 							</div><!-- Carousel Inner Ends -->
@@ -507,7 +514,19 @@
 	<script type="text/javascript" src="js/custom.js"></script>	
 	<!-- Color -->
 	<script type="text/javascript" src="js/color-panel.js"></script>
+
+    <script type="text/javascript" src="http://s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+    <script type="text/javascript">
+        $('#android_btn').click(
+            function() {
+                require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us10.list-manage.com","uuid":"8e2440ea5306384f9dd4df5d5","lid":"f399794a69"}) })
+                return false;
+            }
+        );
+    </script>
 	<!-- Script Ends -->
+
+
 
 	
 </body>
