@@ -339,7 +339,7 @@
     </section> Hearthstone Section Ends -->   
 
 	<!-- Team Section Begins -->
-	<section id="team" class="team">
+	<section id="team" class="team hidden-xs">
 		<div class="container team-inner">
 			<!-- Title & Desc Row Begins -->
 			<div class="row">
@@ -477,14 +477,14 @@
 	</section><!-- Team Section Ends -->
 
 	<!-- Download Now Section Begins -->
-	<section id="download" class="download-now hdark">
+	<section id="download" class="download-now dark2">
         <div class="container download-now-inner">
 			<!-- Download Buttons -->
 			<div class="row text-center">
 				<!-- Button -->
-				<a class="btn slide-btn iphone animated" data-animation="fadeInLeft" data-animation-delay="300" target="_blank" href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229" onclick="trackOutboundLink('https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229?mt=8'); return false;">Download for iPhone <i class="fa fa-apple"></i></a>
+				<a class="btn slide-btn iphone animated" data-animation="fadeInLeft" data-animation-delay="300" target="_blank" href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229" onclick="trackOutboundLink('https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229?mt=8'); return false;">Download on iPhone <i class="fa fa-apple"></i></a>
 				<!-- Button -->				
-				<a class="btn slide-btn bg-color animated android_btn" data-animation="fadeInRight" data-animation-delay="300" target="_blank"><i class="fa fa-android"></i> Sign Up for Android</a>
+				<a class="btn slide-btn bg-color animated android_btn" data-animation="fadeInRight" data-animation-delay="300" target="_blank"><i class="fa fa-android"></i>&nbsp;&nbsp;&nbsp;Sign Up for Android</a>
 			</div>
 		</div>
 	</section>
@@ -493,7 +493,7 @@
 	
 	
 	<!-- Copyright Section Begins -->
-	<section id="copyright" class="copyright hdark">
+	<section id="copyright" class="copyright dark2">
 		<div class="container">	
 			
 			<!-- Social Media -->
@@ -547,7 +547,7 @@
     <script type="text/javascript">
         $('.android_btn').click(
             function() {
-                document.cookie = 'MCEvilPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;'; 
+                document.cookie = 'MCEvilPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
                 require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us10.list-manage.com","uuid":"8e2440ea5306384f9dd4df5d5","lid":"f399794a69"}) });
                 console.log("Test");
                 return false;
