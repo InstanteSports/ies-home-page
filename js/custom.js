@@ -142,6 +142,23 @@ jQuery(document).ready(function($) {
 	});
 
 	
+/* --------------------------------------------
+
+ Active Navigation-[
+
+-------------------------------------------- */
+
+
+
+
+	jQuery('body').scrollspy({ 
+
+		target: '#topnav',
+
+		offset: 95
+
+	})
+
 
 });
 
@@ -179,22 +196,6 @@ $(function() {
 	});
 
 });
-
-/* --------------------------------------------
-
- Active Navigation-[
-
--------------------------------------------- */
-
-
-
-	jQuery('body').scrollspy({ 
-
-		target: '#topnav',
-
-		offset: 95
-
-	})
 
  
 
