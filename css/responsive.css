@@ -273,6 +273,11 @@
 		margin: 0;
 		padding: 0;
 	}
+	.features-section .list-item li{
+		width:100%;
+	}
+}
+
 }
 /* ---------- MAX 480PX ---------- */
 @media only screen and (max-width:480px) {
