@@ -251,8 +251,9 @@ a:hover, a:visited, a:active  {
 .timer{
   font-family:'Oswald', sans-serif
   margin: 0;
-  font-size: 7em;
+  font-size: 8em;
   color: #ea4242;
+
 }
 .hour{
 	color: white;
@@ -262,4 +263,7 @@ a:hover, a:visited, a:active  {
   padding: 20px;
 }
 
+.content{
+  display: none;  
+}
 
