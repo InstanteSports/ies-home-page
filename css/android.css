@@ -23,12 +23,18 @@
 }
 
 body {
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
+  background: url('../images/slider/slider-1.jpg') no-repeat center center fixed !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	background: none;
-    color: white;
-    font-weight: 300;
+  color: white;
+  font-weight: 300;
 }
 
 h1 {
@@ -243,10 +249,17 @@ a:hover, a:visited, a:active  {
 }
 
 .timer{
+  font-family:'Oswald', sans-serif
   margin: 0;
-  font-size: 1.2em;
-  color: black;
+  font-size: 7em;
+  color: #ea4242;
 }
-
+.hour{
+	color: white;
+}
+.timer-wrapper{
+  background: rgba(64, 64, 64, 0.5);
+  padding: 20px;
+}
 
 
