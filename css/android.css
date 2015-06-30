@@ -24,7 +24,7 @@
 
 body {
 	
-  background: url('../images/slider/slider-1.jpg') no-repeat center center fixed !important;
+  background: url('../images/slider/slider-1.jpg') !important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
