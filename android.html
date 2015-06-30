@@ -5,8 +5,81 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" href="">
+	<link rel="stylesheet" type="text/css" href="css/android.css"/>
+	<link rel="icon" href="assets/img/favicon.ico">
+    <!-- Google Font -->
+    <title>Instant eSports - The Best Way To Follow Your Favorite eSports Teams and Players</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,400italic' rel='stylesheet' type='text/css'>
+    <script src="bower_components/jquery.countdown/dist/jquery.countdown.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
 	
+
+	<div id="mc_embed_signup" style="width:70%">
+        <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate id=   "subscription-form">
+            <input type="email" value="" name="EMAIL" class="required email input-lg form-control subscription-input" id="mce-EMAIL" maxlength="254" name="email" placeholder="YOUR EMAIL" type="email" value="" />
+        <div id="email_error" style="display:none">Please enter a valid email address</div>
+    </div>
+
+    <div style="position: absolute; left: -5000px;">
+        <input type="text" name="b_8e2440ea5306384f9dd4df5d5_f399794a69" tabindex="-1" value="">
+    </div>
+    <div class="clear">
+    <button type="submit" value="GET NOTIFIED WHEN IT'S READY" class="btn btn-lg subscribe button" style="width:70%; margin-top:10px;"><i class="fa fa-android" style="font-size:1.5em; margin-right:14px;"></i>SIGN UP FOR ANDROID  <p class="timer"></p> </button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+
+    <script>
+        function isEmail(email) {
+          var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+          return regex.test(email);
+        }
+
+        $('#mc-embedded-subscribe-form').submit(
+            function() {
+                var email_val = $('#mce-EMAIL').val();
+                if (!isEmail(email_val)) {
+                    $('#email_error').show();    
+                } else {
+                    $('email_error').hide();
+                    var data = {
+                        "email": email_val
+                    };
+                    var headers = {
+                        "Content-Type": "application/json"
+                    };
+                    ga('send', {
+                      'hitType': 'event',          // Required.
+                      'eventCategory': 'form',   // Required.
+                      'eventAction': 'submit',      // Required.
+                      'eventLabel': 'android_email',
+                      'eventValue': 2
+                    });
+                    // Assume it works lol
+                    $.post(
+                        "http://ies-cdn.net/mc/",
+                        JSON.stringify(data)
+                    );
+                    $('#email_form').hide();
+                    $('#email_success').show();
+                }
+                return false;
+            }
+        );
+
+
+    </script>
+</body>
+
+</html>
+
 </body>
 </html>
