@@ -3033,3 +3033,7 @@ blockquote{
 	color: #FFFFFF;
 	font-size: 16px;
 }
+
+.owl-item {
+	cursor: auto !important;
+}
