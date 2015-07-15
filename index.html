@@ -66,8 +66,18 @@
             }
         });
     }
-    var trackOutboundLink = function(url) {
+    var trackOutboundAndroid = function(url) {
         console.log(url)
+        twttr.conversion.trackPid('l6g6b', { tw_sale_amount: 1, tw_order_quantity: 1 });
+        ga('send', 'event', 'outbound', 'click', 'android_app', 3, {
+            'hitCallback': function() {
+                document.location = url;
+            }
+        });
+    }
+    var trackOutboundIOS = function(url) {
+        console.log(url)
+        twttr.conversion.trackPid('l6g68', { tw_sale_amount: 1, tw_order_quantity: 1 });
         ga('send', 'event', 'outbound', 'click', 'iOS_app', 3, {
             'hitCallback': function() {
                 document.location = url;
@@ -75,6 +85,7 @@
         });
     }
     </script>
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
     <!--SOCIAL static -->
     <div style="position:absolute; top:7px; right:7px; font-size:2em; z-index:100; color:#FFFFFF;">
         <a href="https://www.facebook.com/instantesports" style="text-decoration:none; border-bottom:0;" onclick="trackSocialLink('https://www.facebook.com/instantesports'); return false;"><i class="fa fa-facebook-official" style="text-decoration:none; border-bottom:0; margin-right:3px;"></i></a>
@@ -159,10 +170,10 @@
                                 <hr />
                                 <p style="padding-bottom:20px;">Instant eSports is the ultimate one-stop shop for eSports fans. Follow your favorite teams and players, track tournament scores and performance stats, and catch up on the latest eSports news-- all on a single mobile app.</p>
                                 <!-- Button -->
-                                <a target="_blank" href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229" class="btn slide-btn btn-darkblue" onclick="trackOutboundLink('https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229?mt=8'); return false;">Download for iPhone <i class="fa fa-apple"></i></a>
+                                <a href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229" class="btn slide-btn btn-darkblue" onclick="trackOutboundIOS('https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229?mt=8'); return false;">Download for iPhone <i class="fa fa-apple"></i></a>
                                 <!-- <a target="_blank" href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229" class="btn slide-btn btn-darkblue">Download for iPhone <i class="fa fa-apple"></i></a> -->
                                 <!-- Button -->
-                                <a href="android.html" class="btn slide-btn white-bg">Sign Up for Android <i class="fa fa-android"></i></a>
+                                <a href="https://play.google.com/store/apps/details?id=com.androidapp.instantesports.ies_android"  onclick="trackOutboundAndroid('https://play.google.com/store/apps/details?id=com.androidapp.instantesports.ies_android'); return false;" class="btn slide-btn white-bg">Download for Android <i class="fa fa-android"></i></a>
                             </div>
                         </div>
                     </div>
@@ -489,9 +500,9 @@
             <div class="row text-center">
                 <!-- Button -->
                 <!-- <a class="btn slide-btn iphone animated" data-animation="fadeInLeft" data-animation-delay="300" target="_blank" href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229">Download on iPhone <i class="fa fa-apple"></i></a> -->
-                <a class="btn slide-btn iphone animated" data-animation="fadeInLeft" data-animation-delay="300" target="_blank" href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229" onclick="trackOutboundLink('https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229?mt=8'); return false;">Download on iPhone <i class="fa fa-apple"></i></a>
+                <a class="btn slide-btn iphone animated" data-animation="fadeInLeft" data-animation-delay="300" href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229" onclick="trackOutboundIOS('https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229?mt=8'); return false;">Download on iPhone <i class="fa fa-apple"></i></a>
                 <!-- Button -->
-                <a class="btn slide-btn bg-color animated" href="android.html" data-animation="fadeInRight" data-animation-delay="300"><i class="fa fa-android"></i>&nbsp;&nbsp;&nbsp;Sign Up for Android</a>
+                <a class="btn slide-btn bg-color animated" href="https://play.google.com/store/apps/details?id=com.androidapp.instantesports.ies_android" onclick="trackOutboundAndroid('https://play.google.com/store/apps/details?id=com.androidapp.instantesports.ies_android'); return false;" data-animation="fadeInRight" data-animation-delay="300"><i class="fa fa-android"></i>&nbsp;&nbsp;&nbsp;Download Android</a>
             </div>
         </div>
     </section>
@@ -561,6 +572,17 @@
     );
     </script>
     <!-- Script Ends -->
+    <!-- Twitter website visit conversion. -->
+    <script type="text/javascript">twttr.conversion.trackPid('l6g6d', { tw_sale_amount: 1, tw_order_quantity: 1 });</script>
+    <noscript>
+      <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l6g6d&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+      <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l6g6d&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=1" />
+    </noscript>
+    <!-- Twitter noscript checker -->
+    <noscript>
+      <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l6g6c&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+      <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l6g6c&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=1" />
+    </noscript>
 </body>
 
 </html>
