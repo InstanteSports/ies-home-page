@@ -1,687 +1,139 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
-<head refix="my_namespace: http://ogp.me/ns/website#">
-    <!-- Title and Meta Tags Begins -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta charset="utf-8">
-    <meta name="google-site-verification" content="zUH66dJQ67fnfI3-41YTXMwncfDDhO6M1u88970aSzI" />
-    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
-    <title>Instant eSports</title>
-    <meta name="description" content="The ultimate one-stop shop for eSports fans. Track news, scores and stats for eSports tournaments from your mobile device. Currently covering major League of Legends tournaments, with Hearthstone, CS:GO, and DotA 2 incoming." />
-    <meta name="keywords" content="eSports, news, scores, stats, League of Legends, DotA, Hearthstone, CS:GO, Smash, Starcraft, LCS" />
-    <meta name="apple-itunes-app" content="app-id=908957229">
-    <meta property="og:title" content="Instant eSports" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://instantesports.com/" />
-    <meta property="og:image" content="http://instantesports.com/images/fbbanner.png" />
-    <meta property="og:description" content="Instant eSports is the ultimate one-stop shop for eSports fans. Track news, scores and stats for eSports tournaments from your mobile device." />
-    <!-- Title and Meta Tags Ends -->
-    <!-- Google Font Begins -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700italic,700,900,900italic' rel='stylesheet' type='text/css'>
-    <!-- <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,600,500,300,200,100,800,900' rel='stylesheet' type='text/css'> -->
-    <!-- Google Font Ends -->
-    <!-- Facebook Conversion Tracking -->
-    <!-- Facebook Conversion Code for Checkouts - Web Views, Android Launch -->
-    <script>(function() {
-    var _fbq = window._fbq || (window._fbq = []);
-    if (!_fbq.loaded) {
-    var fbds = document.createElement('script');
-    fbds.async = true;
-    fbds.src = '//connect.facebook.net/en_US/fbds.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(fbds, s);
-    _fbq.loaded = true;
-    }
-    })();
-    window._fbq = window._fbq || [];
-    window._fbq.push(['track', '6031449709718', {'value':'0.00','currency':'USD'}]);
-    </script>
-    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6031449709718&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
-    <!-- CSS Begins-->
-    <!-- <link href='http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'/> -->
-    <link href="css/flaticon.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="instantesports.com/css_root/flaticon.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!-- <link href="css/portfolio.css" rel="stylesheet" type="text/css" /> -->
-    <link href="css/animate.min.css" rel="stylesheet" type="text/css" />
-    <!-- <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" /> -->
-    <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
-    <!-- <link href="css/YTPlayer.css" rel="stylesheet" type="text/css" /> -->
-    <!-- <link href="css/tweet-carousel.css" rel="stylesheet" type="text/css" /> -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- Main Style -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
-    <!-- Color Panel -->
-    <link href="css/color_panel.css" rel="stylesheet" type="text/css" />
-    <!-- Skin Colors -->
-    <link href="css/color-schemes/red.css" id="changeable-colors" rel="stylesheet" type="text/css" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-
-
-    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/images/favicon/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/images/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/images/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="/images/favicon/mstile-144x144.png">
-
-    <script type="text/javascript">
-
-    var _tsq = _tsq || [];
-    _tsq.push(["setAccountName", "instantesports"]);
-    _tsq.push(["trackPage"]);
-
-    (function() {
-        function z(){
-            var s = document.createElement("script");
-            s.type = "text/javascript";
-            s.async = "async";
-            s.src = window.location.protocol + "//cdn.tapstream.com/static/js/tapstream.js";
-            var x = document.getElementsByTagName("script")[0];
-            x.parentNode.insertBefore(s, x);
-        }
-        if (window.attachEvent)
-            window.attachEvent("onload", z);
-        else
-            window.addEventListener("load", z, false);
-    })();
-
-    </script>
-
-</head>
-
-<body class="dark-version">
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-58734350-3', 'auto');
-    ga('send', 'pageview');
-
-    var trackSocialLink = function(url) {
-        ga('send', 'event', 'outbound', 'click', url, 1, {
-            'hitCallback': function() {
-                document.location = url;
-            }
-        });
-    }
-    var trackOutboundAndroid = function(url) {
-        console.log(url)
-        twttr.conversion.trackPid('l6g6b', { tw_sale_amount: 1, tw_order_quantity: 1 });
-        ga('send', 'event', 'outbound', 'click', 'android_app', 3, {
-            'hitCallback': function() {
-                document.location = url;
-            }
-        });
-    }
-    var trackOutboundIOS = function(url) {
-        console.log(url)
-        twttr.conversion.trackPid('l6g68', { tw_sale_amount: 1, tw_order_quantity: 1 });
-        ga('send', 'event', 'outbound', 'click', 'iOS_app', 3, {
-            'hitCallback': function() {
-                document.location = url;
-            }
-        });
-    }
-    </script>
-    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
-    <!--SOCIAL static -->
-    <div style="position:absolute; top:7px; right:7px; font-size:2em; z-index:100; color:#FFFFFF;">
-        <a href="https://www.facebook.com/instantesports" style="text-decoration:none; border-bottom:0;" onclick="trackSocialLink('https://www.facebook.com/instantesports'); return false;"><i class="fa fa-facebook-official" style="text-decoration:none; border-bottom:0; margin-right:3px;"></i></a>
-        <a href="https://twitter.com/instantesports" style="text-decoration:none; border-bottom:0;" onclick="trackSocialLink('https://twitter.com/instantesports'); return false;"><i class="fa fa-twitter-square" style="text-decoration:none; border-bottom:0; margin-right:10px"></i></a>
-    </div>
-    <!-- Page Loader -->
-    <!-- <div id="pageloader"> -->
-    <!--    <div class="loader-item fa fa-spin colored-border"></div> -->
-    <!-- </div> -->
-    <!-- Header Begins -->
-    <section id="home">
-        <div id="home" class="header-section">
-            <!-- Background Slider Begins -->
-            <div id="slides" class="home-slider relative">
-                <!-- Slides -->
-                <div class="slides-container relative">
-                    <!-- Slider Images -->
-                    <div class="slide-item slide-item1"><img src="images/slider/slider-1.jpg" width="1600" height="894" alt="Slider" /></div>
-                    <div class="slide-item slide-item2"><img src="images/slider/slider-2.jpg" width="1600" height="894" alt="Slider" /></div>
-                    <div class="slide-item slide-item3"><img src="images/slider/slider-3.jpg" width="1600" height="894" alt="Slider" /></div>
-                    <!-- End Slider Images -->
-                </div>
-                <!-- Top Section Begins -->
-                <div id="sticky-section" class="sticky-navigation">
-                    <div id="top-section" class="top-container absolute container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <!-- Logo Begins -->
-                                <div id="logo" class="site-logo col-md-3 no-padding">
-                                    <a title="Instant eSports" href=""><span class="logo-letter"></i><img src="images/logo.png" alt="Instant eSports"></a>
-                                </div>
-                                <!-- Logo Ends -->
-                                <!-- Navigation Menu Begins -->
-                                <div id="navigation" class="col-md-9 no-padding navbar top-navbar">
-                                    <!-- Mobile Nav Toggle Begins -->
-                                    <div class="navbar-header nav-respons">
-                                        <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                    </div>
-                                    <!-- Mobile Nav Toggle Ends -->
-                                    <!-- Menu Begins -->
-                                    <nav id="topnav" role="navigation" class="collapse navbar-collapse bs-navbar-collapse no-padding">
-                                        <ul class="nav navbar-nav navbar-right uppercase">
-                                            <li><a href="#home" class="scroll">Home</a></li>
-                                            <li><a href="#features" class="scroll">Features</a></li>
-                                            <li><a href="#league" class="scroll">League of Legends</a></li>
-                                            
-                                            <!--<li><a href="#dota2" class="scroll">DotA 2</a></li>
-                                            <li><a href="#hearthstone" class="scroll">Hearthstone</a></li>-->
-
-                                            <li><a href="#team" class="scroll">Team</a></li>
-
-                                            <!--<li><a href="http://news.instantesports.com/" target="_blank">News</a></li>-->
-
-                                            <li><a href="#download" class="scroll">Download</a></li>
-                                        </ul>
-                                    </nav>
-                                    <!-- Menu Ends -->
-                                </div>
-                                <!-- Navigation Menu Ends -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    </section>
-    <!-- Top Section Ends -->
-    <!-- Slide Text Begins -->
-    <div class="text-slider-section absolute container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="carousel-slider">
-                    <!-- Carousel Inner Begins -->
-                    <div id="owl-demo" class="owl-demo owl-carousel">
-                        <!-- Slider 1 -->
-                        <div class="slider-container text-left">
-                            <div class="slider-text col-sm-5">
-                                <div class="benefits">
-                                    <img src="images/screenshots/news2.png" alt="" class="relative animated" data-animation="fadeInLeft" data-animation-delay="500">
-                                    <img src="images/screenshots/schedule2.png" alt="" class="phone-image-right relative animated" data-animation="fadeInLeft" data-animation-delay="1200">
-                                </div>
-                            </div>
-                            <div class="slider-text col-sm-7">
-                                <h2 class="capitalize">Put <span>eSports </span>in your pocket</h2>
-                                <hr />
-                                <p style="padding-bottom:20px;">Instant eSports is the ultimate one-stop shop for eSports fans. Follow your favorite teams and players, track tournament scores and performance stats, and catch up on the latest eSports news-- all on a single mobile app.</p>
-                                <!-- Button -->
-                                <a href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229" class="btn slide-btn btn-darkblue" onclick="trackOutboundIOS('https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229?mt=8'); return false;">Download for iPhone <i class="fa fa-apple"></i></a>
-                                <!-- Button -->
-                                <a href="https://play.google.com/store/apps/details?id=com.androidapp.instantesports.ies_android" class="btn slide-btn btn-darkblue" onclick="trackOutboundAndroid('https://play.google.com/store/apps/details?id=com.androidapp.instantesports.ies_android'); return false;">Download for Android <i class="fa fa-android"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Carousel Inner Ends -->
-                </div>
-            </div>
-            <!-- Column Ends -->
-        </div>
-        <!-- Row Ends -->
-    </div>
-    <!-- Slide Text Ends -->
-    </div>
-    <!-- Background Slider Ends -->
-    </div>
-    <!-- Header Ends -->
-
-    <!-- Features Section Begins -->
-    <section id="features" class="additional-section dark2">
-        <div class="container additional-inner">
-            <!-- Title & Desc Row Begins -->
-            <div class="row">
-                <div class="col-md-12 header text-center">
-                    <!-- Title -->
-                    <div class="title">
-                        <h2>Key Features</h2>
-                    </div>
-                    <!-- Description -->
-                    <p class="desc white">Instant eSports brings you the best mobile eSports tracking experience with comprehensive, in-depth coverage of tournaments and industry news.</p>
-                </div>
-            </div>
-            <!-- Title & Desc Row Ends -->
-            <!-- Additional features Begins -->
-            <div class="row features-border-top">
-                <div class="col-md-3">
-                    <div class="additional-features animated" data-animation="fadeInLeft" data-animation-delay="300">
-                        <!-- Icon -->
-                        <i class="glyphicon glyphicon-globe"></i>
-                        <!-- Content -->
-                        <div class="additional-content">
-                            <h5>News</h5>
-                            <p>Keep up-to-date on the competitive gaming scene with our eSports news aggregator.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="additional-features animated" data-animation="fadeInUp" data-animation-delay="200">
-                        <!-- Icon -->
-                        <i class="glyphicon glyphicon-calendar"></i>
-                        <!-- Content -->
-                        <div class="additional-content">
-                            <h5>Schedules</h5>
-                            <p>Check tournament schedules and set reminders for key matches so you never miss a big game.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="additional-features animated" data-animation="fadeInRight" data-animation-delay="300">
-                        <!-- Icon -->
-                        <i class="glyphicon glyphicon-stats"></i>
-                        <!-- Content -->
-                        <div class="additional-content">
-                            <h5>Scores</h5>
-                            <p>View tournament standings and match recaps with in-depth team and player stats.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 right-border">
-                    <div class="additional-features animated" data-animation="fadeInRight" data-animation-delay="400">
-                        <!-- Icon -->
-                        <i class="glyphicon glyphicon-comment"></i>
-                        <!-- Content -->
-                        <div class="additional-content">
-                            <h5>Live Feed</h5>
-                            <p>Follow your favorite teams and players to get their content and updates straight from the source.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!-- Features Section Ends -->
-
-    <!-- League Section Begins -->
-    <section id="league" class="features-section hdark">
-        <div class="container inner">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="title">
-                        <h2>League of Legends</h2></div>
-                    <ul class="list-item medium" style="margin-bottom:0">
-                        <li>
-                            <i class="glyphicon glyphicon-tower"></i>
-                            <div class="features">
-                                <span class="list-title">Live LCS Game Stats</span>
-                                <p>Track performance stats in real-time with second-by-second updates during live LCS matches.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="glyphicon glyphicon-flash"></i>
-                            <div class="features">
-                                <span class="list-title">Extras On-the-Go</span>
-                                <p>Watch live games and official VODs through the app, and view per-game Fantasy stats.</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="col-xs-6 col-md-3"><img src="http://ies-cdn.net/static/league-of-legends/tournaments-transparent/nalcs.png" alt="NA League of Legends Championship Series (NA LCS)" />
-                    </div>
-                    <div class="col-xs-6 col-md-3"><img src="http://ies-cdn.net/static/league-of-legends/tournaments-transparent/eulcs.png" alt="EU League of Legends Championship Series (EU LCS)" />
-                    </div>
-                    <div class="col-xs-6 col-md-3"><img src="http://ies-cdn.net/static/league-of-legends/tournaments-transparent/lcklogo.png" alt="League of Legends Championship Korea (LCK)" />
-                    </div>
-                    <div class="col-xs-6 col-md-3"><img src="http://ies-cdn.net/static/league-of-legends/tournaments-transparent/lpllogo.png" alt="Tencent League of Legends Pro League (LPL)" />
-                    </div>
-                    <div class="col-xs-6 col-md-3"><img src="http://ies-cdn.net/static/league-of-legends/tournaments-transparent/worldchamp2014.png" alt="Riot - World Championship 2014" />
-                    </div>
-                    <div class="col-xs-6 col-md-3"><img src="http://ies-cdn.net/static/league-of-legends/tournaments-transparent/nacslogo.png" alt="NA Challenger Series" />
-                    </div>
-                    <div class="col-xs-6 col-md-3"><img src="http://ies-cdn.net/static/league-of-legends/tournaments-transparent/eucslogo.png" alt="EU Challenger Series" />
-                    </div>
-                    <div class="col-xs-6 col-md-3"><img src="http://ies-cdn.net/static/league-of-legends/tournaments-transparent/msilogo.png" alt="Mid-Season Invitational (MSI) 2015" />
-                    </div>
-                </div>
-                <div class="col-md-4 app-image">
-                    <img src="images/screenshots/league.png" alt="LCS Scores and Stats">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- League Section Ends -->
-
-    <!-- DotA 2 Section Begins
-    <section id="dota2" class="features-section dark2">
-
-        <div class="container inner">
-            <div class="row">
-                <div class="col-md-4 app-image">
-                    <img src="images/screenshots/dota2.png" alt="DotA 2 Scores and Stats">
-                </div>
-                <div class="col-md-8">
-                    <h2>DOTA 2 (iOS only)</h2>
-                    <ul class="list-item medium">
-                        <li>
-                            <i class="glyphicon glyphicon-pushpin"></i>
-                            <div class="features">
-                                <span class="list-title">Schedules and Matchups</span>
-                                <p>Keep up with who and when your favorite teams are playing.</p>
-                             </div>
-                        </li>
-                        <li>
-                            <i class="glyphicon glyphicon-tasks"></i>
-                            <div class="features">
-                                <span class="list-title">Quality Recaps</span>
-                                <p>View detailed, side-by-side comparisons of KDA, gold count, LH, and item build.</p>
-                             </div>
-                        </li>
-                    </ul>
-                    <div class="col-xs-6 col-md-3"><img src="images/tournament logos/dota2/international.png" alt="The International DotA 2 Championships" />
-                    </div>
-                    </div>
-                </div>
-
-             </div>
-
-        </div>
-    </section>
-    DotA 2 Section Ends
-
-    Hearthstone Section Begins
-    <section id="hearthstone" class="features-section hdark">
-        <div class="container inner">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="title">
-                        <h2>Hearthstone</h2></div>
-                    <ul class="list-item medium" style="margin-bottom:0">
-                        <li>
-                            <i class="glyphicon glyphicon-paperclip"></i>
-                            <div class="features">
-                                <span class="list-title">Event Calendar</span>
-                                <p>Check when upcoming tournaments are being held and view VODs for recorded streams.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="glyphicon glyphicon-facetime-video"></i>
-                            <div class="features">
-                                <span class="list-title">Fun Videos</span>
-                                <p>Learn more about the game and watch a hundred reasons why it's called Skillstone.</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="col-xs-6 col-md-3"><img src="images/tournament logos/hearthstone/assembly-summer2015.png" alt="The Assembly Summer 2015" />
-                    </div>
-                    <div class="col-xs-6 col-md-3"><img src="images/tournament logos/hearthstone/ogn-masters-korea.png" alt="OGN Masters Korea" />
-                    </div>
-                    <div class="col-xs-6 col-md-3"><img src="images/tournament logos/hearthstone/archon-team-league-championships.png" alt="Archon Team League Championships" />
-                    </div>
-                </div>
-                <div class="col-md-4 app-image">
-                    <img src="images/screenshots/hearthstone.png" alt="Hearthstone Schedule and Videos">
-                </div>
-            </div>
-        </div>
-    </section>
-    Hearthstone Section Ends -->
-
-    <!-- Team Section Begins -->
-    <section id="team" class="team hidden-xs">
-        <div class="container team-inner">
-            <!-- Title & Desc Row Begins -->
-            <div class="row">
-                <div class="col-md-12 header text-center">
-                    <!-- Title -->
-                    <div class="title">
-                        <h2>Meet the Team</h2>
-                    </div>
-                    <!-- Description -->
-                    <p class="desc">We’re a small but mighty team of gaming enthusiasts working to create the best mobile experience for our fellow eSports fans. Based in the San Francisco Bay Area, we strive to spread our passion for games and make a comprehensive, quality eSports experience more accessible to the gaming community.</p>
-                </div>
-            </div>
-            <!-- Title & Desc Row Ends -->
-            <!-- Team Row Begins -->
-            <div class="row">
-                <!-- Team 1 Begins -->
-                <div class="col-md-3 col-sm-6 animated" data-animation="fadeInRight" data-animation-delay="400">
-                    <div class="team-box">
-                        <!-- Team Box Inner Begins -->
-                        <div class="team-box-inner">
-                            <!-- Thumbnail -->
-                            <div class="team-thumbnail">
-                                <img src="images/team/rick.jpg" width="715" alt="team" class="img-responsive" />
-                            </div>
-                            <div class="about-member">
-                                <!-- Title -->
-                                <h3 class="team-title normal">Rick Ling</h3>
-                                <h4 class="role1">Pet Owner</h4>
-                                <!-- Description -->
-                                <p>Lurks reddit at all hours. Believes Gangplank is best champion for any role.</p>
-                                <div class="social-icon">
-                                    <a target="_blank" href="https://twitter.com/esportsrick"><i class="fa fa-twitter twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Team Box Inner Ends -->
-                    </div>
-                </div>
-                <!-- Team 1 Ends -->
-                <!-- Team 2 Begins -->
-                <div class="col-md-3 col-sm-6 animated" data-animation="fadeInRight" data-animation-delay="400">
-                    <div class="team-box">
-                        <!-- Team Box Inner Begins -->
-                        <div class="team-box-inner">
-                            <!-- Thumbnail -->
-                            <div class="team-thumbnail">
-                                <img src="images/team/jlin.jpg" width="715" alt="team" class="img-responsive" />
-                            </div>
-                            <div class="about-member">
-                                <!-- Title -->
-                                <h3 class="team-title normal">Jonathan Lin</h3>
-                                <h4 class="role2">Mobile Gaming Addict</h4>
-                                <!-- Description -->
-                                <p>When he's not on his phone, you can find him coding away at the latest feature.</p>
-                                <div class="social-icon">
-                                    <a target="_blank" href="https://twitter.com/jonzlin95"><i class="fa fa-twitter twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Team Box Inner Ends -->
-                    </div>
-                </div>
-                <!-- Team 2 Ends -->
-                <!-- Team 3 Begins -->
-                <div class="col-md-3 col-sm-6 animated" data-animation="fadeInRight" data-animation-delay="400">
-                    <div class="team-box">
-                        <!-- Team Box Inner Begins -->
-                        <div class="team-box-inner">
-                            <!-- Thumbnail -->
-                            <div class="team-thumbnail">
-                                <img src="images/team/sebby.png" width="715" alt="team" class="img-responsive" />
-                            </div>
-                            <div class="about-member">
-                                <!-- Title -->
-                                <h3 class="team-title normal">Sebastian Merz</h3>
-                                <h4 class="role3">Chief Officer of Gaming Inventory</h4>
-                                <!-- Description -->
-                                <p>Builds servers. Plays games. Talks a lot. Sometimes all three at once.</p>
-                                <div class="social-icon">
-                                    <a target="_blank" href="https://twitter.com/TheSambasti"><i class="fa fa-twitter twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Team Box Inner Ends -->
-                    </div>
-                </div>
-                <!-- Team 3 Ends -->
-                <!-- Team 4 Begins -->
-                <div class="col-md-3 col-sm-6 animated" data-animation="fadeInRight" data-animation-delay="400">
-                    <div class="team-box">
-                        <!-- Team Box Inner Begins -->
-                        <div class="team-box-inner">
-                            <!-- Thumbnail -->
-                            <div class="team-thumbnail">
-                                <img src="images/team/jonwu.png" width="715" alt="team" class="img-responsive" />
-                            </div>
-                            <div class="about-member">
-                                <!-- Title -->
-                                <h3 class="team-title normal">Jonathan Wu</h3>
-                                <h4 class="role4">Flying Squirrel</h4>
-                                <p>Hackathon hacker. Android Lead. An adrenaline junkie, who loves climbing.</p>
-                                <div class="social-icon">
-                                    <a target="_blank" href="https://twitter.com/captainjonwu"><i class="fa fa-twitter twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Team Box Inner Ends -->
-                    </div>
-                </div>
-                <!-- Team 4 Ends -->
-                <!-- Team 5 Begins -->
-                <div class="col-md-3 col-sm-6 animated" data-animation="fadeInRight" data-animation-delay="400">
-                    <div class="team-box">
-                        <!-- Team Box Inner Begins -->
-                        <div class="team-box-inner">
-                            <!-- Thumbnail -->
-                            <div class="team-thumbnail">
-                                <img src="images/team/joanna.jpg" width="715" alt="team" class="img-responsive" />
-                            </div>
-                            <div class="about-member">
-                                <!-- Title -->
-                                <h3 class="team-title normal">Joanna Jao</h3>
-                                <h4 class="role5">Part-Time Peony</h4>
-                                <!-- Description -->
-                                <p>Cat whisperer. Lover of scary movies, furry animals, and spicy food.</p>
-                                <div class="social-icon">
-                                    <a target="_blank" href="https://twitter.com/stunflower"><i class="fa fa-twitter twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Team Box Inner Ends -->
-                    </div>
-                </div>
-                <!-- Team 5 Ends -->
-                <div class="community col-md-9 col-sm-6" style="padding-top:20px;">
-                    <p>Contact us at <a target="_blank" href="mailto:team@instantesports.com">team@instantesports.com</a>
-                        </p>
-                </div>
-            </div>
-            <!-- Team Row Ends -->
-        </div>
-    </section>
-    <!-- Team Section Ends -->
-    <!-- Download Now Section Begins -->
-    <section id="download" class="download-now dark2">
-        <div class="container download-now-inner">
-            <!-- Download Buttons -->
-            <div class="row text-center">
-                <!-- Button -->
-                <!-- <a class="btn slide-btn iphone animated" data-animation="fadeInLeft" data-animation-delay="300" target="_blank" href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229">Download for iPhone <i class="fa fa-apple"></i></a> -->
-                <a class="btn slide-btn iphone animated" data-animation="fadeInLeft" data-animation-delay="300" href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229" onclick="trackOutboundIOS('https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229?mt=8'); return false;">Download for iPhone <i class="fa fa-apple"></i></a>
-                <!-- Button -->
-                <a class="btn slide-btn bg-color animated" href="https://play.google.com/store/apps/details?id=com.androidapp.instantesports.ies_android" onclick="trackOutboundAndroid('https://play.google.com/store/apps/details?id=com.androidapp.instantesports.ies_android'); return false;" data-animation="fadeInRight" data-animation-delay="300"><i class="fa fa-android"></i>&nbsp;&nbsp;&nbsp;Download for Android</a>
-            </div>
-        </div>
-    </section>
-    <!-- Download Now Section Begins -->
-    <!-- Copyright Section Begins -->
-    <section id="copyright" class="copyright dark2">
-        <div class="container">
-            <!-- Social Media -->
-            <div class="row social-media animated" data-animation="fadeInUp" data-animation-delay="400">
-                <div class="col-md-12">
-                    <!-- Icons -->
-                    <a href="https://www.facebook.com/instantesports/" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="https://twitter.com/instantesports" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="mailto:team@instantesports.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                </div>
-            </div>
-            <div class="row social-media animated" data-animation="fadeInUp" data-animation-delay="400">
-                <div class="col-md-12">
-                    <!-- MixPanel -->
-                    <a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" /></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Copyright Section Ends -->
-    <!-- Script Begins -->
-    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- <script type="text/javascript" src="js/bootstrap-hover-dropdown.min.js"></script> -->
-    <!-- <script type="text/javascript" src="js/bootstrapValidator.min.js"></script> -->
-    <script type="text/javascript" src="js/jquery.sticky.js"></script>
-    <!-- Slider and Features Canvas -->
-    <script type="text/javascript" src="js/jquery.superslides.js"></script>
-    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-    <!-- Overlay -->
-    <script type="text/javascript" src="js/overlay/modernizr.js"></script>
-    <!-- Screenshot -->
-    <!-- <script type="text/javascript" src="js/jquery.flexisel.js"></script> -->
-    <!-- Portfolio -->
-    <!-- <script type="text/javascript" src="js/jquery.prettyPhoto.js" ></script> -->
-    <!-- <script type="text/javascript" src="js/jquery.mixitup.min.js"></script> -->
-    <!-- <script type="text/javascript" src="js/jquery.fitvids.js"></script> -->
-    <!-- <script type="text/javascript" src="js/jquery.easing.1.3.js"></script> -->
-    <!-- Video -->
-    <!-- <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script> -->
-    <!-- Counting Section -->
-    <script type="text/javascript" src="js/jquery.appear.js"></script>
-    <!-- Expertise Circular Progress Bar -->
-    <!-- <script type="text/javascript" src="js/effect.js"></script> -->
-    <!-- Twitter -->
-    <script type="text/javascript" src="js/tweet/carousel.js"></script>
-    <!-- <script type="text/javascript" src="js/tweet/scripts.js"></script> -->
-    <!-- <script type="text/javascript" src="js/tweet/tweetie.min.js"></script> -->
-    <!-- Custom -->
-    <script type="text/javascript" src="js/custom.js"></script>
-    <!-- Color -->
-    <script type="text/javascript" src="js/color-panel.js"></script>
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-    <script type="text/javascript">
-    $('.android_btn').click(
-        function() {
-            document.cookie = 'MCEvilPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
-            require(["mojo/signup-forms/Loader"], function(L) {
-                L.start({
-                    "baseUrl": "mc.us10.list-manage.com",
-                    "uuid": "8e2440ea5306384f9dd4df5d5",
-                    "lid": "f399794a69"
-                })
-            });
-            console.log("Test");
-            return false;
-        }
-    );
-    </script>
-    <!-- Script Ends -->
-    <!-- Twitter website visit conversion. -->
-    <script type="text/javascript">twttr.conversion.trackPid('l6g6d', { tw_sale_amount: 1, tw_order_quantity: 1 });</script>
-    <noscript>
-      <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l6g6d&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
-      <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l6g6d&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=1" />
-    </noscript>
-    <!-- Twitter noscript checker -->
-    <noscript>
-      <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l6g6c&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
-      <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l6g6c&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=1" />
-    </noscript>
-</body>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		
+		<title>Instant eSports</title>
+		<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="The ultimate one-stop shop for eSports fans. Track news, scores and stats for eSports tournaments from your mobile device. Currently covering major League of Legends tournaments, with Hearthstone, CS:GO, and DotA 2 incoming." />
+		<meta name="keywords" content="eSports, news, scores, stats, League of Legends, DotA, Hearthstone, CS:GO, Smash, Starcraft, LCS">
+		<meta name="apple-itunes-app" content="app-id=908957229">
+		<meta name="google-site-verification" content="zUH66dJQ67fnfI3-41YTXMwncfDDhO6M1u88970aSzI">
+		<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+		
+		<meta property="og:title" content="Instant eSports" />
+		<meta property="og:url" content="http://www.instantesports.com" />
+		<meta property="og:description" content="The ultimate one-stop shop for eSports fans. Track news, scores and stats for eSports tournaments from your mobile device. Currently covering major League of Legends tournaments, with Hearthstone, CS:GO, and DotA 2 incoming." />
+		<meta property="og:site_name" content="Instant eSports" />
+		<meta property="og:image" content="http://instantesports.com/images/fbbanner.png">
+		
+		<meta name="twitter:title" content="Instant eSports">
+		<meta name="twitter:description" content="The ultimate one-stop shop for eSports fans. Track news, scores and stats for eSports tournaments from your mobile device. Currently covering major League of Legends tournaments, with Hearthstone, CS:GO, and DotA 2 incoming.">
+		<meta name="apple-itunes-app" content="app-id=908957229">
+		<link rel="shortcut icon" href="assets/img/icons/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="assets/css/style.min.css" />
+		
+		<script src="assets/js/jquery-1.11.3.min.js"></script>
+		<script src="assets/js/waypoints.min.js"></script>
+		<script type="text/javascript" src="assets/js/script.min.js" charset="utf-8"></script>
+		<script src="https://use.typekit.net/ake3mox.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-58734350-3', 'auto');
+		ga('send', 'pageview');
+		</script>
+		
+	</head>
+	<body>
+		<section id="cover-header">
+			<div class="container">
+				<div class="cover-content">
+					<div class="cover-logo"><img class="img-scaled" src="assets/img/icons/logo_red.png" /></div>
+					<h1 class="cover-title">Instant eSports</h1>
+					<h2 class="cover-subtitle">Put eSports in your pocket</h2>
+					<p class="cover-caption">Track pro League of Legends anywhere, anytime. Watching Worlds? Follow along with real-time game stats and live team and player updates.</p>
+					<div class="cover-download">
+						<div class="cover-download-appstore"><a href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229" target="_blank"><img class="img-scaled-h" src="assets/img/icons/app_store.png" /></a></div>
+						<div class="cover-download-playstore"><a href="https://play.google.com/store/apps/details?id=com.androidapp.instantesports.ies_android" target="_blank"><img class="img-scaled-h" src="assets/img/icons/play_store.png" /></a></div>
+					</div>
+					<div class="cover-follow">
+						<div class="cover-follow-caption">Follow Instant eSports</div>
+						<div class="cover-follow-item"><a href="https://www.facebook.com/instantesports" target="_blank"><img class="img-scaled" src="assets/img/icons/facebook.png" /></a></div>
+						<div class="cover-follow-item"><a href="https://twitter.com/instantesports" target="_blank"><img class="img-scaled" src="assets/img/icons/twitter.png" /></a></div>
+					</div>
+				</div>
+				<div id="cover-shot">
+					<div id="cover-shot-nexus" class="transition-whoosh inactive"><img class="img-scaled" src="assets/img/shots/cover_nexus.png" /></div>
+					<div id="cover-shot-iphone" class="transition-whoosh inactive"><img class="img-scaled" src="assets/img/shots/cover_iphone.png" /></div>
+				</div>
+			</div>
+		</section>
+		<section class="slide">
+			<div class="container">
+				<div class="slide-content transition-whoosh inactive">
+					<h1 class="slide-title">Track Real-time Stats for Live Games</h1>
+					<p class="slide-description">Instant eSports is the <strong>ONLY</strong> mobile app with official real-time, second-by-second stats for live League of Legends games. Keep up with current matches on-the-go or follow along with the livestream. Available for NA LCS, EU LCS, and Worlds.</p>
+				</div>
+				<div class="clearfix"></div>
+				<div class="slide-shot transition-whoosh inactive"><img class="img-scaled" src="assets/img/shots/live.png" /></div>
+			</div>
+		</section>
+		<section class="slide">
+			<div class="container">
+				<div class="slide-content transition-whoosh inactive">
+					<h1 class="slide-title">Read the Latest eSports News</h1>
+					<p class="slide-description">Stay in-the-know on the big news of the day with our eSports news aggregator. We draw content from the best sources covering the competitive scene and bring them all together for your browsing convenience.</p>
+				</div>
+				<div class="slide-shot transition-whoosh inactive"><img class="img-scaled" src="assets/img/shots/news.png" /></div>
+				<div class="clearfix"></div>
+			</div>
+		</section>
+		<section class="slide">
+			<div class="container">
+				<div class="slide-content transition-whoosh inactive">
+					<h1 class="slide-title">View Upcoming Matches and Set Reminders</h1>
+					<p class="slide-description">Never miss a big match with our calendar of upcoming events, covering the NA LCS, EU LCS, LCK, LPL, and other official LoL eSports tournaments. Set a reminder for games of interest, and we’ll notify you when they go live.</p>
+				</div>
+				<div class="clearfix"></div>
+				<div class="slide-shot transition-whoosh inactive"><img class="img-scaled" src="assets/img/shots/schedule.png" /></div>
+			</div>
+		</section>
+		<section class="slide">
+			<div class="container">
+				<div class="slide-content transition-whoosh inactive">
+					<h1 class="slide-title">Get Team and Player Updates from the Source</h1>
+					<p class="slide-description">Keep up with your favorite League of Legends pros through your own personalized feed. Follow teams and players in the app to get their official content and live social media updates all in one place.</p>
+				</div>
+				<div class="slide-shot transition-whoosh inactive"><img class="img-scaled" src="assets/img/shots/feed.png" /></div>
+				<div class="clearfix"></div>
+			</div>
+		</section>
+		<section id="cover-footer">
+			<div class="container">
+				<div class="cover-content">
+					<div class="cover-logo"><img class="img-scaled" src="assets/img/icons/logo_white.png" /></div>
+					<h1 class="cover-title">Instant eSports</h1>
+					<h2 class="cover-subtitle">Put eSports in your pocket</h2>
+					<p class="cover-caption">The ultimate one-stop shop for eSports fans. Currently available for League of Legends. Coming soon: CS:GO, DotA 2, and Hearthstone.</p>
+					<div class="cover-download">
+						<div class="cover-download-appstore"><a href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229" target="_blank"><img class="img-scaled-h" src="assets/img/icons/app_store.png" /></a></div>
+						<div class="cover-download-playstore"><a href="https://play.google.com/store/apps/details?id=com.androidapp.instantesports.ies_android" target="_blank"><img class="img-scaled-h" src="assets/img/icons/play_store.png" /></a></div>
+					</div>
+					<div class="cover-follow">
+						<div class="cover-follow-caption">Follow Instant eSports</div>
+						<div class="cover-follow-item"><a href="https://www.facebook.com/instantesports" target="_blank"><img class="img-scaled" src="assets/img/icons/facebook.png" /></a></div>
+						<div class="cover-follow-item"><a href="https://twitter.com/instantesports" target="_blank"><img class="img-scaled" src="assets/img/icons/twitter.png" /></a></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="footer">
+			<div id="footer-logo"><img class="img-scaled" src="assets/img/icons/logo_red.png" /></div>
+			<div id="footer-link">
+				<div class="footer-link-item"><a href="mailto:team@instantesports.com">Feedback</a></div>
+				<div class="footer-link-item"><a href="mailto:joanna@instantesports.com">Business Inquiry</a></div>
+				<div class="clearfix"></div>
+			</div>
+			<div id="footer-extra">
+				<div id="footer-copyright">Copyright 2015 Instant eSports All Rights Reserved.</div>
+				<div id="footer-mixpanel"><a href="https://mixpanel.com/f/partner"><img src="http://cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" /></a></div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</section>
+	</body>
 </html>
