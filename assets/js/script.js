@@ -17,24 +17,7 @@ $(document).ready(function(){
 		}
 	}, {offset: '75%'});
 
-	$('.cover-download-playstore').click(function(event) {
-		track = ga('send', {
-		  hitType: 'event',
-		  eventCategory: 'Store',
-		  eventAction: 'button press',
-		  eventLabel: 'Play Store'
-		});
-		console.log("track playstore press");
-	});
-
-	$('.cover-download-appstore').click(function(event) {
-		ga('send', {
-		  hitType: 'event',
-		  eventCategory: 'Store',
-		  eventAction: 'button press',
-		  eventLabel: 'App Store'
-		});
-		console.log("track appstore press");
-	});
+	$('.cover-livetext-input').intlTelInput();
+	$('.cover-livetext-input').intlTelInput("loadUtils", "assets/js/intlTelInput/js/utils.js");
 
 });
