@@ -24,10 +24,14 @@ $(document).ready(function(){
 
 
     $('.cover-livetext-submit').click(function() {
+    	console.log("Button pushed");
         if ($.trim(telInput.val())) {
+        	console.log(telInput.intlTelInput("isValidNumber"));
+        	console.log(telInput.intlTelInput("getNumber"));
             if (telInput.intlTelInput("isValidNumber")) {
+            	console.log("Is this working?");
                 $.post("http://instant-esports-static.herokuapp.com/text_download/",
-                    {"phone_number": telInput.intlTelInput("getNumber")}
+                    JSON.stringify({"phone_number": telInput.intlTelInput("getNumber")})
                 );
             } else {
               telInput.addClass("error");
