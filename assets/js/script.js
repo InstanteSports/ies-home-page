@@ -21,26 +21,41 @@ $(document).ready(function(){
 	$('.cover-livetext-input').intlTelInput("loadUtils", "assets/js/intlTelInput/js/utils.js");
 
 	var telInput = $('.cover-livetext-input');
+	var errMsg = $('.error-message');
+	var successMsg = $('.text-success');
 
 
     $('.cover-livetext-submit').click(function() {
     	console.log("Button pushed");
         if ($.trim(telInput.val())) {
-        	console.log(telInput.intlTelInput("isValidNumber"));
-        	console.log(telInput.intlTelInput("getNumber"));
             if (telInput.intlTelInput("isValidNumber")) {
-            	console.log("Is this working?");
                 $.post("http://instant-esports-static.herokuapp.com/text_download/",
-                    JSON.stringify({"phone_number": telInput.intlTelInput("getNumber")})
+                    JSON.stringify({"phone_number": telInput.intlTelInput("getNumber")}),
+                    function (data) {
+                    	telInput.hide();
+                    	errMsg.hide();
+                    	$('.cover-livetext-submit').hide();
+                    	$('.text-success').show();
+                    	$('.flag-container').hide();
+                    }
                 );
             } else {
               telInput.addClass("error");
+              errMsg.show();
             }
         }
     })
 
-    telInput.keydown(function() {
-      telInput.removeClass("error");
-    });
+    telInput.blur(function() {
+	  if ($.trim(telInput.val())) {
+	    if (telInput.intlTelInput("isValidNumber")) {
+	    	telInput.removeClass("error");
+	    	errMsg.hide();
+	    } else {
+	      telInput.addClass("error");
+	      errMsg.show();
+	    }
+	}
+});
 
 });
