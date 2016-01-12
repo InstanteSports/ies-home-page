@@ -30,6 +30,7 @@
 	
 	<script src="assets/js/jquery-1.11.3.min.js"></script>
 	<script src="assets/js/jquery-ui.min.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
 	<script src="assets/js/waypoints.min.js"></script>
 	<script src="assets/js/owl.carousel.min.js"></script>
 	<script src="assets/js/intlTelInput/js/intlTelInput.js"></script>
@@ -43,10 +44,6 @@
 
 	<div id="cover-background">
 		<div class="cover-background-item cover-background-active transition-whoosh"><img class="fit-width" src="assets/img/thumbnails/background_main.jpg" /></div>
-		<div class="cover-background-item transition-whoosh"><img class="fit-width" src="assets/img/thumbnails/background_allstar.jpg" /></div>
-		<div class="cover-background-item transition-whoosh"><img class="fit-width" src="assets/img/thumbnails/background_skt.jpg" /></div>
-		<div class="cover-background-item transition-whoosh"><img class="fit-width" src="assets/img/thumbnails/background_fan.jpg" /></div>
-		<div class="cover-background-item transition-whoosh"><img class="fit-width" src="assets/img/thumbnails/background_bjergsen.jpg" /></div>
 	</div>
 	<div id="cover-overlay"></div>
 	<section id="cover">
@@ -71,9 +68,9 @@
 			<div id="cover-content">
 				<h1 id="cover-title">
 					<span class="cover-title-feature transition-whoosh">Keep up with the latest eSports news</span>
-					<span class="cover-title-feature cover-title-feature-pre transition-whoosh">Track upcoming games and view detailed match recaps</span>
+					<span class="cover-title-feature cover-title-feature-pre transition-whoosh">Track upcoming games and see detailed match recaps</span>
 					<span class="cover-title-feature cover-title-feature-pre transition-whoosh">Learn about your favorite teams and players</span>
-					<span class="cover-title-feature cover-title-feature-pre transition-whoosh">Discuss breaking news and live matches with fellow fans</span>
+					<span class="cover-title-feature cover-title-feature-pre transition-whoosh">Discuss breaking news and live matches with fans</span>
 				</h1>
 				<p id="cover-subtitle">Instant eSports makes following eSports easy. Track professional League of Legends news, scores and stats— anytime, anywhere.</p>
 				<div class="cover-livetext">
@@ -191,7 +188,7 @@
 			</div>
 			<div id="talk-demo-theater">
 				<div id="talk-demo-news" class="talk-demo-item transition-whoosh" style="display: block;">
-					<div class="talk-demo-background"><img class="fit-width" src="assets/img/thumbnails/allstar.png" /></div>
+					<div class="talk-demo-background"><img class="fit-parent" src="assets/img/thumbnails/allstar.png" /></div>
 					<div class="talk-demo-overlay"></div>
 					<div class="container clearfix">
 						<div class="talk-demo-content transition-whoosh">
@@ -201,7 +198,7 @@
 								<div class="talk-demo-timestamp">December 13, 2015 9:02PM</div>
 							</div>
 						</div>
-						<div id="talk-demo-match-chat" class="talk-demo-chat">
+						<div id="talk-demo-news-chat" class="talk-demo-chat">
 							<div class="talk-demo-chat-item transition-whoosh clearfix">
 								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/clg.png" /></div>
 								<div class="talk-demo-chat-content clearfix">
@@ -256,7 +253,7 @@
 					</div>
 				</div>
 				<div id="talk-demo-match" class="talk-demo-item transition-whoosh">
-					<div class="talk-demo-background"><img class="fit-width" src="assets/img/thumbnails/tsmlgd_match.png" /></div>
+					<div class="talk-demo-background"><img class="fit-parent" src="assets/img/thumbnails/tsmlgd_match.jpg" /></div>
 					<div class="talk-demo-overlay"></div>
 					<div class="container clearfix">
 						<div class="talk-demo-content transition-whoosh"><img class="fit-width" src="assets/img/thumbnails/tsmlgd_stat.png" /></div>
@@ -311,21 +308,11 @@
 									<div class="talk-demo-chat-message">Not sure, but I’d think the org would give them plenty of time to prep</div>
 								</div>
 							</div>
-							<div class="talk-demo-chat-item transition-whoosh clearfix">
-								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/clg.png" /></div>
-								<div class="talk-demo-chat-content clearfix">
-									<div class="talk-demo-chat-info clearfix">
-										<div class="talk-demo-chat-user">oChaos</div>
-										<div class="talk-demo-chat-timestamp">7m ago</div>
-									</div>
-									<div class="talk-demo-chat-message">CLG CLG CLG</div>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
 				<div id="talk-demo-player" class="talk-demo-item transition-whoosh">
-					<div class="talk-demo-background"><img class="fit-width" src="assets/img/thumbnails/faker_cover.png" /></div>
+					<div class="talk-demo-background"><img class="fit-parent" src="assets/img/thumbnails/faker_cover.png" /></div>
 					<div class="talk-demo-overlay"></div>
 					<div class="container clearfix">
 						<div class="talk-demo-content transition-whoosh">
@@ -333,7 +320,7 @@
 							<div class="talk-demo-title">Faker</div>
 							<div class="talk-demo-info clearfix">Midlaner at SKT T1</div>
 						</div>
-						<div id="talk-demo-match-chat" class="talk-demo-chat">
+						<div id="talk-demo-player-chat" class="talk-demo-chat">
 							<div class="talk-demo-chat-item transition-whoosh clearfix">
 								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/c9.png" /></div>
 								<div class="talk-demo-chat-content clearfix">
@@ -388,63 +375,63 @@
 					</div>
 				</div>
 				<div id="talk-demo-team" class="talk-demo-item transition-whoosh">
-					<div class="talk-demo-background"><img class="fit-width" src="assets/img/thumbnails/skt_cover.png" /></div>
+					<div class="talk-demo-background"><img class="fit-parent" src="assets/img/thumbnails/liquid_cover.jpg" /></div>
 					<div class="talk-demo-overlay"></div>
 					<div class="container clearfix">
 						<div class="talk-demo-content transition-whoosh">
-							<img class="fit-width" src="assets/img/shots/skt.png" />
-							<div class="talk-demo-title">SKT T1</div>
-							<div class="talk-demo-info clearfix">1st Place in World Championship 2015</div>
+							<img class="fit-width" src="assets/img/shots/tl.png" />
+							<div class="talk-demo-title">Team Liquid</div>
+							<div class="talk-demo-info clearfix">3rd Place in NA LCS Summer 15</div>
 						</div>
-						<div id="talk-demo-match-chat" class="talk-demo-chat">
+						<div id="talk-demo-team-chat" class="talk-demo-chat">
 							<div class="talk-demo-chat-item transition-whoosh clearfix">
-								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/cj.png" /></div>
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/fnc.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-user">Stunflower</div>
+										<div class="talk-demo-chat-timestamp">35m ago</div>
+									</div>
+									<div class="talk-demo-chat-message">You guys hear about TL having a 10-man roster now? Thoughts?</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/clg.png" /></div>
 								<div class="talk-demo-chat-content clearfix">
 									<div class="talk-demo-chat-info clearfix">
 										<div class="talk-demo-chat-user">oChaos</div>
-										<div class="talk-demo-chat-timestamp">3h ago</div>
+										<div class="talk-demo-chat-timestamp">29m ago</div>
 									</div>
-									<div class="talk-demo-chat-message">Donec id elit non mi porta gravida at eget.</div>
+									<div class="talk-demo-chat-message">yeah, really interesting. I guess it’s a pretty big advantage if the other teams need to practice for two potential opponents on your team instead of one.</div>
 								</div>
 							</div>
 							<div class="talk-demo-chat-item transition-whoosh clearfix">
-								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/kt.png" /></div>
-								<div class="talk-demo-chat-content clearfix">
-									<div class="talk-demo-chat-info clearfix">
-										<div class="talk-demo-chat-user">dadefakerpawn</div>
-										<div class="talk-demo-chat-timestamp">18m ago</div>
-									</div>
-									<div class="talk-demo-chat-message">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</div>
-								</div>
-							</div>
-							<div class="talk-demo-chat-item transition-whoosh clearfix">
-								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/koo.png" /></div>
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/tsm.png" /></div>
 								<div class="talk-demo-chat-content clearfix">
 									<div class="talk-demo-chat-info clearfix">
 										<div class="talk-demo-chat-user">iDiscarded</div>
-										<div class="talk-demo-chat-timestamp">18m ago</div>
+										<div class="talk-demo-chat-timestamp">13m ago</div>
 									</div>
-									<div class="talk-demo-chat-message">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</div>
+									<div class="talk-demo-chat-message">idk if it’s worth the extra money you’d have to spend on the larger team.</div>
 								</div>
 							</div>
 							<div class="talk-demo-chat-item talk-demo-chat-self transition-whoosh clearfix">
 								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/skt.png" /></div>
 								<div class="talk-demo-chat-content clearfix">
 									<div class="talk-demo-chat-info clearfix">
-										<div class="talk-demo-chat-timestamp">3m ago</div>
+										<div class="talk-demo-chat-timestamp">10m ago</div>
 										<div class="talk-demo-chat-user">RokaK</div>
 									</div>
-									<div class="talk-demo-chat-message">Praesent commodo cursus</div>
+									<div class="talk-demo-chat-message">A bigger roster full of solid players should be able to perform well without a single person carrying the whole team</div>
 								</div>
 							</div>
 							<div class="talk-demo-chat-item transition-whoosh clearfix">
-								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/kt.png" /></div>
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/uol.png" /></div>
 								<div class="talk-demo-chat-content clearfix">
 									<div class="talk-demo-chat-info clearfix">
-										<div class="talk-demo-chat-user">dadefakerpawn</div>
+										<div class="talk-demo-chat-user">TheSambasti</div>
 										<div class="talk-demo-chat-timestamp">Just Now</div>
 									</div>
-									<div class="talk-demo-chat-message">Sed posuere consectetur est at lobortis.</div>
+									<div class="talk-demo-chat-message">If it goes well for them, other teams are probably going to follow suit.</div>
 								</div>
 							</div>
 						</div>
@@ -486,7 +473,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="footnote">Made with Lots of Love and League at Berkeley, CA.</div>
+		<div id="footnote">Made with Lots of Love and League in Berkeley, CA.</div>
 	</section>
 </body>
 </html>

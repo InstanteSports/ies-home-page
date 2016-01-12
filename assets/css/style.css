@@ -277,6 +277,8 @@ p {
     left: calc(50% - 175px);
 }
 
+div#cover-shot-news {}
+
 #cover-shot-schedule, #cover-shot-stat {
     width: 300px;
     max-height: 534px;
@@ -289,7 +291,7 @@ p {
 }
 
 .cover-shot-item {
-    box-shadow: 0px 0px 25px rgba(27, 40, 56, 0.25);
+    box-shadow: 0px 0px 25px rgba(27, 40, 56, 0.5);
     border-radius: 5px;
     overflow: hidden;
     position: absolute;
@@ -693,7 +695,7 @@ p {
 #talk-demo-player .talk-demo-content, #talk-demo-team .talk-demo-content {
     width: 240px;
     top: calc(50% - 183px);
-    box-shadow: 0px 0px 50px rgba(27, 40, 56, 0.75);
+    /* box-shadow: 0px 0px 50px rgba(27, 40, 56, 0.75); */
     left: 100px;
 }
 
@@ -704,7 +706,7 @@ p {
     width: 450px;
 }
 
-#talk-demo-player.talk-demo-active .talk-demo-title, #talk-demo-player.talk-demo-active .talk-demo-info, #talk-demo-team.talk-demo-active .talk-demo-title, #talk-demo-team.talk-demo-active .talk-demo-info {
+#talk-demo-player .talk-demo-title, #talk-demo-team .talk-demo-title, #talk-demo-player .talk-demo-info, #talk-demo-team .talk-demo-info {
     display: none;
 }
 
@@ -726,6 +728,10 @@ p {
     float: right;
     padding: 75px 0px;
     width: 450px;
+}
+
+#talk-demo-player-chat {
+    padding: 130px 0px 75px;
 }
 
 .talk-demo-chat-item {
@@ -953,7 +959,6 @@ p {
     }
 
     #cover .container {
-        padding-top: 40px;
         overflow: hidden;
     }
 
@@ -1168,7 +1173,7 @@ p {
     }
 
     .talk-demo-item .container {
-        padding-top: 60px !important;
+        padding-top: 40px !important;
     }
 
     .talk-demo-title {
@@ -1196,7 +1201,7 @@ p {
     }
 
     .talk-demo-chat-item {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     .talk-demo-info {
@@ -1237,12 +1242,20 @@ p {
         top: 0px;
     }
 
-    #talk-demo-player.talk-demo-active .talk-demo-content > img, #talk-demo-team.talk-demo-active .talk-demo-content > img {
+    #talk-demo-player .talk-demo-content > img, #talk-demo-team .talk-demo-content > img {
         display: none;
     }
 
     #talk-demo-player.talk-demo-active .talk-demo-title, #talk-demo-player.talk-demo-active .talk-demo-info, #talk-demo-team.talk-demo-active .talk-demo-title, #talk-demo-team.talk-demo-active .talk-demo-info {
         display: block;
+    }
+
+    #talk-demo-news-chat {
+        padding-top: 40px;
+    }
+
+    #talk-demo-player-chat {
+        padding: 45px 0px 0px 0px;
     }
 
     #action .container {
