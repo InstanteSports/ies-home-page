@@ -119,11 +119,8 @@ $(document).ready(function(){
                 $.post("http://instant-esports-static.herokuapp.com/text_download/",
                     JSON.stringify({"phone_number": telInputOne.intlTelInput("getNumber")}),
                     function (data) {
-                    	console.log("Success");
-                    	telInputOne.hide();
-                    	telInputTwo.hide()
                     	errMsg.hide();
-                    	$('.cover-livetext-submit').hide();
+                    	alert("A download link has been sent to your phone!");
                     	$('.text-success').show();
                     	$('.flag-container').hide();
                     }
@@ -139,11 +136,8 @@ $(document).ready(function(){
                 $.post("http://instant-esports-static.herokuapp.com/text_download/",
                     JSON.stringify({"phone_number": telInputTwo.intlTelInput("getNumber")}),
                     function (data) {
-                    	console.log("Success");
-                    	telInputOne.hide();
-                    	telInputTwo.hide();
                     	errMsg.hide();
-                    	$('.cover-livetext-submit').hide();
+                    	alert("A download link has been sent to your phone!");
                     	$('.text-success').show();
                     	$('.flag-container').hide();
                     }
