@@ -1,31 +1,116 @@
-$(document).ready(function(){
-	
-	setTimeout(function(){
-		$('#cover-shot-nexus').removeClass('inactive');
-		setTimeout(function(){
-			$('#cover-shot-iphone').removeClass('inactive');
-		}, 100);
-	}, 300);
+var cycle_count = 1;
 
-	$('.slide-content').waypoint(function(direction){
-		if (direction == 'down') {
-			$(this).siblings('.slide-shot').removeClass('inactive');
-			$(this).removeClass('inactive');
-		} else {
-			$(this).siblings('.slide-shot').addClass('inactive');
-			$(this).addClass('inactive');
-		}
-	}, {offset: '75%'});
+function cycle_cover() {
+	
+	$('.cover-title-feature-post').addClass('cover-title-feature-pre').removeClass('cover-title-feature-post');
+	
+	if (cycle_count == 5) {
+		var current_header = $('.cover-title-feature:nth-child(5)');
+		var new_header = $('.cover-title-feature:nth-child(1)');
+
+		// var current_background = $('.cover-background-item:nth-child(5)');
+		// var new_background = $('.cover-background-item:nth-child(1)');
+	} else {
+		var current_header = $('.cover-title-feature:nth-child('+cycle_count+')');
+		var new_header = $('.cover-title-feature:nth-child('+(cycle_count+1)+')');
+
+		// var current_background = $('.cover-background-item:nth-child('+cycle_count+')');
+		// var new_background = $('.cover-background-item:nth-child('+(cycle_count+1)+')');
+	}
+	
+	current_header.addClass('cover-title-feature-post');
+	new_header.removeClass('cover-title-feature-pre');
+
+	// current_background.removeClass('cover-background-active');
+	// new_background.addClass('cover-background-active');
+
+	if (cycle_count == 5) {
+		cycle_count = 1;
+	} else {
+		cycle_count++;
+	}
+}
+
+$(document).ready(function(){
+
+	setTimeout(function(){
+		$('body').addClass('ready');
+	}, 500);
+
+	setInterval(function(){
+		cycle_cover();
+	}, 3000);
 
 	$('.cover-livetext-input').intlTelInput();
 	$('.cover-livetext-input').intlTelInput("loadUtils", "assets/js/intlTelInput/js/utils.js");
+
+	$('.follow-news-item').waypoint(function(direction){
+
+		if (direction == 'down') {
+			$(this).addClass('follow-news-item-active');
+		} else {
+			$(this).removeClass('follow-news-item-active');
+		}
+
+	}, {offset: '90%'});
+
+	$('.follow-games-item').waypoint(function(direction){
+
+		if (direction == 'down') {
+			$(this).addClass('follow-games-item-active');
+		} else {
+			$(this).removeClass('follow-games-item-active');
+		}
+
+	}, {offset: '75%'});
+
+	$('.learn-card-item').waypoint(function(direction){
+
+		if (direction == 'down') {
+			$(this).addClass('learn-card-item-active');
+		} else {
+			$(this).removeClass('learn-card-item-active');
+		}
+
+	}, {offset: '90%'});
+
+	$('#talk-demo-theater').waypoint(function(direction){
+
+		if (direction == 'down') {
+			$('#talk-demo-news').addClass('talk-demo-active');
+		}
+
+	}, {offset: '50%', triggerOnce: 'true'});
+
+	$('.talk-demo-selector-item').click(function(){
+		var selection = $(this).attr('data-selection');
+
+		$('.talk-demo-selector-active').removeClass('talk-demo-selector-active');
+		$(this).addClass('talk-demo-selector-active');
+
+		$('.talk-demo-active').removeClass('talk-demo-active');
+		$('#talk-demo-'+selection).addClass('talk-demo-active');
+
+		$('#talk-demo').removeClass('talk-demo-preload');
+
+		if (selection == 'match') {
+			$('#talk-demo-theater').addClass('talk-demo-theater-extended');
+		} else {
+			$('#talk-demo-theater').removeClass('talk-demo-theater-extended');
+		}
+
+	});
+
+	$('#learn-carousel').owlCarousel({
+		autoWidth: true,
+		center: true
+	});
 
 	var telInput = $('.cover-livetext-input');
 	var errMsg = $('.error-message');
 	var successMsg = $('.text-success');
 
-
-    $('.cover-livetext-submit').click(function() {
+	    $('.cover-livetext-submit').click(function() {
     	console.log("Button pushed");
         if ($.trim(telInput.val())) {
             if (telInput.intlTelInput("isValidNumber")) {
@@ -55,7 +140,6 @@ $(document).ready(function(){
 	      telInput.addClass("error");
 	      errMsg.show();
 	    }
-	}
-});
+	}});
 
 });

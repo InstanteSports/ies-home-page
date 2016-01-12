@@ -1,177 +1,492 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
 <head>
-    <title>Instant eSports - League of Legends news, scores and stats</title>
-    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Instant eSports is the ultimate one-stop shop for eSports fans. Track news, scores and stats for pro League of Legends (LoL), with coverage of the NA LCS, EU LCS, LCK, Worlds, and other international tournaments." />
-    <meta name="keywords" content="eSports, news, scores, stats, schedule, League of Legends, LoL, LCS, LCK, Worlds">
+	
+	<title>Instant eSports</title>
+	<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <meta name="description" content="The ultimate one-stop shop for eSports fans. Track news, scores and stats for eSports tournaments from your mobile device. Currently covering major League of Legends tournaments, with Hearthstone, CS:GO, and DotA 2 incoming." />
+
+    <meta name="keywords" content="eSports, news, scores, stats, League of Legends, DotA, Hearthstone, CS:GO, Smash, Starcraft, LCS">
     <meta name="apple-itunes-app" content="app-id=908957229">
     <meta name="google-site-verification" content="zUH66dJQ67fnfI3-41YTXMwncfDDhO6M1u88970aSzI">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
-    <meta property="og:title" content="Instant eSports - League of Legends news, scores and stats" />
+    
+    <meta property="og:title" content="Instant eSports" />
     <meta property="og:url" content="http://www.instantesports.com" />
-    <meta property="og:description" content="Instant eSports is the ultimate one-stop shop for eSports fans. Track news, scores and stats for pro LoL, with coverage of the NA LCS, EU LCS, LCK, Worlds, and other international tournaments." />
+    <meta property="og:description" content="The ultimate one-stop shop for eSports fans. Track news, scores and stats for eSports tournaments from your mobile device. Currently covering major League of Legends tournaments, with Hearthstone, CS:GO, and DotA 2 incoming." />
     <meta property="og:site_name" content="Instant eSports" />
     <meta property="og:image" content="http://instantesports.com/images/fbbanner.png">
-    <meta name="twitter:title" content="Instant eSports - League of Legends news, scores and stats">
-    <meta name="twitter:description" content="Instant eSports is the ultimate one-stop shop for eSports fans. Track news, scores and stats for pro LoL, with coverage of the NA LCS, EU LCS, LCK, Worlds, and other international tournaments.">
-    <link rel="shortcut icon" href="assets/img/icons/favicon.ico" />
-    <link rel="stylesheet" href="assets/js/intlTelInput/css/intlTelInput.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.min.css" />
-    <script src="assets/js/jquery-1.11.3.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/intlTelInput/js/intlTelInput.js"></script>
-    <script type="text/javascript" src="assets/js/script.js" charset="utf-8"></script>
-    <script src="https://use.typekit.net/ake3mox.js"></script>
-    <script>
-    try {
-        Typekit.load({
-            async: true
-        });
-    } catch (e) {}
-    </script>
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    
+    <meta name="twitter:title" content="Instant eSports">
+    <meta name="twitter:description" content="The ultimate one-stop shop for eSports fans. Track news, scores and stats for eSports tournaments from your mobile device. Currently covering major League of Legends tournaments, with Hearthstone, CS:GO, and DotA 2 incoming.">
 
-    ga('create', 'UA-58734350-3', 'auto');
-    ga('send', 'pageview');
-    </script>
+	<link rel="shortcut icon" href="assets/img/icons/favicon.ico" />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/js/intlTelInput/css/intlTelInput.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	
+	<script src="assets/js/jquery-1.11.3.min.js"></script>
+	<script src="assets/js/jquery-ui.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/intlTelInput/js/intlTelInput.js"></script>
+	<script type="text/javascript" src="assets/js/script.js" charset="utf-8"></script>
+
+	<script src="https://use.typekit.net/ake3mox.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	
 </head>
-
 <body>
-    <section id="cover-header">
-        <div class="container">
-            <div class="cover-content">
-                <div class="cover-logo"><img class="img-scaled" src="assets/img/icons/logo_red.png" /></div>
-                <h1 class="cover-title">Instant eSports</h1>
-                <h2 class="cover-subtitle">Put eSports in your pocket</h2>
-                <p class="cover-caption">The ultimate one-stop shop for eSports fans. Currently available for League of Legends. Coming soon: CS:GO, DotA 2, and Hearthstone.</p>
-                <div class="cover-download">
-                    <div class="cover-download-appstore">
-                        <a href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229" target="_blank"><img class="img-scaled-h" src="assets/img/icons/app_store.png" /></a>
-                    </div>
-                    <div class="cover-download-playstore">
-                        <a href="https://play.google.com/store/apps/details?id=com.androidapp.instantesports.ies_android" target="_blank"><img class="img-scaled-h" src="assets/img/icons/play_store.png" /></a>
-                    </div>
-                </div>
-                <div class="cover-livetext">
-                    <span class="error-message">Please enter a valid phone number</span>
-                    <input type="tel" class="cover-livetext-input" placeholder="(123) 456-7890" />
-                    <button class="cover-livetext-submit">Text me a link</button>
-                    <p class="text-success">We've sent a link to your phone. See you on the Fields of Justice!</p>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="cover-follow">
-                    <div class="cover-follow-caption">Follow Instant eSports</div>
-                    <div class="cover-follow-item">
-                        <a href="https://www.facebook.com/instantesports" target="_blank"><img class="img-scaled" src="assets/img/icons/facebook.png" /></a>
-                    </div>
-                    <div class="cover-follow-item">
-                        <a href="https://twitter.com/instantesports" target="_blank"><img class="img-scaled" src="assets/img/icons/twitter.png" /></a>
-                    </div>
-                </div>
-            </div>
-            <div id="cover-shot">
-                <div id="cover-shot-nexus" class="transition-whoosh inactive"><img class="img-scaled" src="assets/img/shots/cover_nexus.png" /></div>
-                <div id="cover-shot-iphone" class="transition-whoosh inactive"><img class="img-scaled" src="assets/img/shots/cover_iphone.png" /></div>
-            </div>
-        </div>
-    </section>
-    <section class="slide">
-        <div class="container">
-            <div class="slide-content transition-whoosh inactive">
-                <h1 class="slide-title">Track Real-time Stats for Live Games</h1>
-                <p class="slide-description">Instant eSports is the <strong>ONLY</strong> mobile app with official real-time, second-by-second stats for live League of Legends games. Keep up with current matches on-the-go or follow along with the livestream. Available for NA LCS, EU LCS, and Worlds.</p>
-            </div>
-            <div class="clearfix"></div>
-            <div class="slide-shot transition-whoosh inactive"><img class="img-scaled" src="assets/img/shots/live.png" /></div>
-        </div>
-    </section>
-    <section class="slide">
-        <div class="container">
-            <div class="slide-content transition-whoosh inactive">
-                <h1 class="slide-title">Read the Latest eSports News</h1>
-                <p class="slide-description">Stay in-the-know on the big news of the day with our eSports news aggregator. We draw content from the best sources covering the competitive scene and bring them all together for your browsing convenience.</p>
-            </div>
-            <div class="slide-shot transition-whoosh inactive"><img class="img-scaled" src="assets/img/shots/news.png" /></div>
-            <div class="clearfix"></div>
-        </div>
-    </section>
-    <section class="slide">
-        <div class="container">
-            <div class="slide-content transition-whoosh inactive">
-                <h1 class="slide-title">View Upcoming Matches and Set Reminders</h1>
-                <p class="slide-description">Never miss a big match with our calendar of upcoming events, covering the NA LCS, EU LCS, LCK, LPL, and other official LoL eSports tournaments. Set reminders for games of interest, and we’ll notify you when they go live.</p>
-            </div>
-            <div class="clearfix"></div>
-            <div class="slide-shot transition-whoosh inactive"><img class="img-scaled" src="assets/img/shots/schedule.png" /></div>
-        </div>
-    </section>
-    <section class="slide">
-        <div class="container">
-            <div class="slide-content transition-whoosh inactive">
-                <h1 class="slide-title">Get Team and Player Updates from the Source</h1>
-                <p class="slide-description">Keep up with your favorite League of Legends pros through your own personalized feed. Follow teams and players in the app to get their official content and live social media updates all in one place.</p>
-            </div>
-            <div class="slide-shot transition-whoosh inactive"><img class="img-scaled" src="assets/img/shots/feed.png" /></div>
-            <div class="clearfix"></div>
-        </div>
-    </section>
-    <section id="cover-footer">
-        <div class="container">
-            <div class="cover-content">
-                <div class="cover-logo"><img class="img-scaled" src="assets/img/icons/logo_white.png" /></div>
-                <h1 class="cover-title">Instant eSports</h1>
-                <h2 class="cover-subtitle">Put eSports in your pocket</h2>
-                <p class="cover-caption">The ultimate one-stop shop for eSports fans. Currently available for League of Legends. Coming soon: CS:GO, DotA 2, and Hearthstone.</p>
-                <div class="cover-download">
-                    <div class="cover-download-appstore">
-                        <a href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229" target="_blank"><img class="img-scaled-h" src="assets/img/icons/app_store.png" /></a>
-                    </div>
-                    <div class="cover-download-playstore">
-                        <a href="https://play.google.com/store/apps/details?id=com.androidapp.instantesports.ies_android" target="_blank"><img class="img-scaled-h" src="assets/img/icons/play_store.png" /></a>
-                    </div>
-                </div>
-                <div class="cover-follow">
-                    <div class="cover-follow-caption">Follow Instant eSports</div>
-                    <div class="cover-follow-item">
-                        <a href="https://www.facebook.com/instantesports" target="_blank"><img class="img-scaled" src="assets/img/icons/facebook.png" /></a>
-                    </div>
-                    <div class="cover-follow-item">
-                        <a href="https://twitter.com/instantesports" target="_blank"><img class="img-scaled" src="assets/img/icons/twitter.png" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="footer">
-        <div id="footer-logo"><img class="img-scaled" src="assets/img/icons/logo_red.png" /></div>
-        <div id="footer-link">
-            <div class="footer-link-item"><a href="mailto:team@instantesports.com">Feedback</a></div>
-            <div class="footer-link-item"><a href="mailto:joanna@instantesports.com">Business Inquiry</a></div>
-            <div class="clearfix"></div>
-        </div>
-        <div id="footer-extra">
-            <div id="footer-copyright">Copyright 2015 Instant eSports All Rights Reserved.</div>
-            <div id="footer-mixpanel">
-                <a href="https://mixpanel.com/f/partner"><img src="http://cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" /></a>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="clearfix"></div>
-    </section>
-</body>
 
+	<div id="cover-background">
+		<div class="cover-background-item cover-background-active transition-whoosh"><img class="fit-width" src="assets/img/thumbnails/background_main.jpg" /></div>
+		<div class="cover-background-item transition-whoosh"><img class="fit-width" src="assets/img/thumbnails/background_allstar.jpg" /></div>
+		<div class="cover-background-item transition-whoosh"><img class="fit-width" src="assets/img/thumbnails/background_skt.jpg" /></div>
+		<div class="cover-background-item transition-whoosh"><img class="fit-width" src="assets/img/thumbnails/background_fan.jpg" /></div>
+		<div class="cover-background-item transition-whoosh"><img class="fit-width" src="assets/img/thumbnails/background_bjergsen.jpg" /></div>
+	</div>
+	<div id="cover-overlay"></div>
+	<section id="cover">
+		<div id="cover-header" class="clearfix">
+			<a href=""><div id="cover-logo" class="clearfix">
+				<div id="cover-logo-icon"><img class="fit-width" src="assets/img/icons/logo_red.png" /></div>
+				<div id="cover-logo-text">Instant eSports</div>
+			</div></a>
+			<div class="cover-download" class="clearfix">
+				<div class="cover-download-item"><a href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229?mt=8" target="_blank"><img class="fit-height" src="assets/img/icons/app_store.png" /></a></div>
+				<div class="cover-download-item"><a href="https://play.google.com/store/apps/details?id=com.androidapp.instantesports.ies_android" target="_blank"><img class="fit-height" src="assets/img/icons/play_store.png" /></a></div>
+			</div>
+			<div id="cover-link" class="clearfix">
+				<div class="cover-link-item"><a href="http://blog.instantesports.com" target="_blank">Blog</a></div>
+				<div class="cover-link-item">
+					<div class="cover-link-social"><a href="https://www.facebook.com/instantesports" target="_blank"><img class="fit-width" src="assets/img/icons/facebook_light.png" /></a></div>
+					<div class="cover-link-social"><a href="https://twitter.com/instantesports" target="_blank"><img class="fit-width" src="assets/img/icons/twitter_light.png" /></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div id="cover-content">
+				<h1 id="cover-title">
+					<span class="cover-title-feature transition-whoosh">Keep up with the latest eSports news</span>
+					<span class="cover-title-feature cover-title-feature-pre transition-whoosh">Track upcoming games and view detailed match recaps</span>
+					<span class="cover-title-feature cover-title-feature-pre transition-whoosh">Learn about your favorite teams and players</span>
+					<span class="cover-title-feature cover-title-feature-pre transition-whoosh">Discuss breaking news and live matches with fellow fans</span>
+				</h1>
+				<p id="cover-subtitle">Instant eSports makes following eSports easy. Track professional League of Legends news, scores and stats— anytime, anywhere.</p>
+				<div class="cover-livetext">
+					<input type="tel" class="cover-livetext-input" placeholder="(123) 456-7890" />
+					<button class="cover-livetext-submit">Get the App</button>
+					<div class="clearfix"></div>
+				</div>
+				<div class="cover-download">
+					<div class="cover-download-item"><img class="fit-height" src="assets/img/icons/app_store_light.png" /></div>
+					<div class="cover-download-item"><img class="fit-height" src="assets/img/icons/play_store_light.png" /></div>
+				</div>
+			</div>
+			<div id="cover-shot" class="transition-whoosh">
+				<div id="cover-shot-schedule" class="cover-shot-item transition-whoosh"><img class="fit-width" src="assets/img/shots/games.jpg" /></div>
+				<div id="cover-shot-stat" class="cover-shot-item transition-whoosh"><img class="fit-width" src="assets/img/shots/bjergsen.jpg" /></div>
+				<div id="cover-shot-news" class="cover-shot-item transition-whoosh"><img class="fit-width" src="assets/img/shots/news.jpg" /></div>
+			</div>
+		</div>
+	</section>
+	<section id="follow">
+		<div class="container">
+			<div id="follow-news" class="follow-item clearfix">
+				<div class="follow-item-content">
+					<h1 class="follow-item-title">Follow the latest eSports news</h1>
+					<p class="follow-item-subtitle">Read articles from all the top sources and get notifications for big headlines.</p>
+				</div>
+				<div class="follow-item-shot">
+					<div class="follow-news-item transition-whoosh"><img class="fit-width" src="assets/img/shots/news_1.jpg" /></div>
+					<div class="follow-news-item transition-whoosh"><img class="fit-width" src="assets/img/shots/news_2.jpg" /></div>
+					<div class="follow-news-item transition-whoosh"><img class="fit-width" src="assets/img/shots/news_3.jpg" /></div>
+				</div>
+			</div>
+			<div id="follow-games" class="follow-item clearfix">
+				<div class="follow-item-content">
+					<h1 class="follow-item-title">Check match schedules and track real-time stats for live games</h1>
+					<p class="follow-item-subtitle">Set reminders for upcoming matches and view detailed recaps of past games.</p>
+				</div>
+				<div class="follow-item-shot">
+					<div class="follow-games-item transition-whoosh"><img class="fit-width" src="assets/img/shots/match.jpg" /></div>
+					<div class="follow-games-item transition-whoosh"><img class="fit-width" src="assets/img/shots/games.jpg" /></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="learn">
+		<div class="container">
+			<h1 id="learn-title">Keep up with your favorite teams and players</h1>
+			<p id="learn-subtitle">Track in-depth performance stats for teams and players, and follow them to create a personalized social media feed.</p>
+			<div id="learn-card" class="clearfix">
+				<div class="learn-card-column">
+					<div class="learn-card-item learn-card-item-sm transition-whoosh"><img class="fit-parent" src="assets/img/shots/doublelift.jpg" /></div>
+				</div>
+				<div class="learn-card-column">
+					<div class="learn-card-item learn-card-item-med transition-whoosh"><img class="fit-parent" src="assets/img/shots/faker.jpg" /></div>
+					<div class="learn-card-item learn-card-item-lg transition-whoosh"><img class="fit-parent" src="assets/img/shots/kalista.jpg" /></div>
+				</div>
+				<div class="learn-card-column">
+					<div class="learn-card-item learn-card-item-lg transition-whoosh"><img class="fit-parent" src="assets/img/shots/c9.jpg" /></div>
+					<div class="learn-card-item learn-card-item-sm transition-whoosh"><img class="fit-parent" src="assets/img/shots/lcs.jpg" /></div>
+				</div>
+				<div class="learn-card-column">
+					<div class="learn-card-item learn-card-item-med transition-whoosh"><img class="fit-parent" src="assets/img/shots/zed.jpg" /></div>
+					<div class="learn-card-item learn-card-item-lg transition-whoosh"><img class="fit-parent" src="assets/img/shots/fnatic.jpg" /></div>
+				</div>
+				<div class="learn-card-column">
+					<div class="learn-card-item learn-card-item-med transition-whoosh"><img class="fit-parent" src="assets/img/shots/worlds.jpg" /></div>
+				</div>
+			</div>
+			<div id="learn-carousel" class="clearfix">
+				<div class="learn-carousel-item"><img class="fit-parent" src="assets/img/shots/doublelift.jpg" /></div>
+				<div class="learn-carousel-item"><img class="fit-parent" src="assets/img/shots/faker.jpg" /></div>
+				<div class="learn-carousel-item"><img class="fit-parent" src="assets/img/shots/kalista.jpg" /></div>
+				<div class="learn-carousel-item"><img class="fit-parent" src="assets/img/shots/c9.jpg" /></div>
+				<div class="learn-carousel-item"><img class="fit-parent" src="assets/img/shots/lcs.jpg" /></div>
+				<div class="learn-carousel-item"><img class="fit-parent" src="assets/img/shots/zed.jpg" /></div>
+				<div class="learn-carousel-item"><img class="fit-parent" src="assets/img/shots/fnatic.jpg" /></div>
+			</div>
+		</div>
+	</section>
+	<section id="talk">
+		<div class="container">
+			<h1 id="talk-title">Discuss breaking news and live matches with fellow fans</h1>
+			<p id="talk-subtitle">Chat with other eSports fans, team staff and pro players about big headlines and hyped games.</p>
+		</div>
+		<div id="talk-demo" class="talk-demo-preload">
+			<div id="talk-demo-selector">
+				<div class="talk-demo-selector-item talk-demo-selector-active clearfix" data-selection="news">
+					<div class="talk-demo-selector-icon-container">
+						<div class="talk-demo-selector-icon"><img class="fit-height" src="assets/img/icons/news.png" /></div>
+						<div class="talk-demo-selector-icon transition-linear"><img class="fit-height" src="assets/img/icons/news_active.png" /></div>
+					</div>
+					<div class="talk-demo-selector-caption">News</div>
+				</div>
+				<div class="talk-demo-selector-item clearfix" data-selection="match">
+					<div class="talk-demo-selector-icon-container">
+						<div class="talk-demo-selector-icon"><img class="fit-height" src="assets/img/icons/match.png" /></div>
+						<div class="talk-demo-selector-icon transition-linear"><img class="fit-height" src="assets/img/icons/match_active.png" /></div>
+					</div>
+					<div class="talk-demo-selector-caption">Matches</div>
+				</div>
+				<div class="talk-demo-selector-item clearfix" data-selection="player">
+					<div class="talk-demo-selector-icon-container">
+						<div class="talk-demo-selector-icon"><img class="fit-height" src="assets/img/icons/player.png" /></div>
+						<div class="talk-demo-selector-icon transition-linear"><img class="fit-height" src="assets/img/icons/player_active.png" /></div>
+					</div>
+					<div class="talk-demo-selector-caption">Players</div>
+				</div>
+				<div class="talk-demo-selector-item clearfix" data-selection="team">
+					<div class="talk-demo-selector-icon-container">
+						<div class="talk-demo-selector-icon"><img class="fit-height" src="assets/img/icons/team.png" /></div>
+						<div class="talk-demo-selector-icon transition-linear"><img class="fit-height" src="assets/img/icons/team_active.png" /></div>
+					</div>
+					<div class="talk-demo-selector-caption">Teams</div>
+				</div>
+			</div>
+			<div id="talk-demo-theater">
+				<div id="talk-demo-news" class="talk-demo-item transition-whoosh" style="display: block;">
+					<div class="talk-demo-background"><img class="fit-width" src="assets/img/thumbnails/allstar.png" /></div>
+					<div class="talk-demo-overlay"></div>
+					<div class="container clearfix">
+						<div class="talk-demo-content transition-whoosh">
+							<div class="talk-demo-title">Team Fire wins the 2015 All-Star Event</div>
+							<div class="talk-demo-info clearfix">
+								<div class="talk-demo-source">LoLeSports</div>
+								<div class="talk-demo-timestamp">December 13, 2015 9:02PM</div>
+							</div>
+						</div>
+						<div id="talk-demo-match-chat" class="talk-demo-chat">
+							<div class="talk-demo-chat-item transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/clg.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-user">oChaos</div>
+										<div class="talk-demo-chat-timestamp">24m ago</div>
+									</div>
+									<div class="talk-demo-chat-message">What'd you guys think of the games this year?</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/tsm.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-user">iDiscarded</div>
+										<div class="talk-demo-chat-timestamp">18m ago</div>
+									</div>
+									<div class="talk-demo-chat-message">tbh i only watched all stars for the 1v1s</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/tsm.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-user">iDiscarded</div>
+										<div class="talk-demo-chat-timestamp">18m ago</div>
+									</div>
+									<div class="talk-demo-chat-message">froggen v liftlift was hilarious</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item talk-demo-chat-self transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/skt.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-timestamp">5m ago</div>
+										<div class="talk-demo-chat-user">RokaK</div>
+									</div>
+									<div class="talk-demo-chat-message">My favorite game was tandem mode. It was cool seeing how the players had trouble in the beginning but got better as the game went on.</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/c9.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-user">lobster</div>
+										<div class="talk-demo-chat-timestamp">Just Now</div>
+									</div>
+									<div class="talk-demo-chat-message">kasing/huni's tandem Lee Sin = my hero</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="talk-demo-match" class="talk-demo-item transition-whoosh">
+					<div class="talk-demo-background"><img class="fit-width" src="assets/img/thumbnails/tsmlgd_match.png" /></div>
+					<div class="talk-demo-overlay"></div>
+					<div class="container clearfix">
+						<div class="talk-demo-content transition-whoosh"><img class="fit-width" src="assets/img/thumbnails/tsmlgd_stat.png" /></div>
+						<div id="talk-demo-match-chat" class="talk-demo-chat">
+							<div class="talk-demo-chat-item talk-demo-chat-self transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/skt.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-timestamp">1h ago</div>
+										<div class="talk-demo-chat-user">RokaK</div>
+									</div>
+									<div class="talk-demo-chat-message">Wow, the first game was close but this was a stomp</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/tsm.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-user">iDiscarded</div>
+										<div class="talk-demo-chat-timestamp">52m ago</div>
+									</div>
+									<div class="talk-demo-chat-message">tsm's looking strong</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/uol.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-user">TheSambasti</div>
+										<div class="talk-demo-chat-timestamp">40m ago</div>
+									</div>
+									<div class="talk-demo-chat-message">Yeah, this was a great debut for the new roster. It’ll be interesting to see how resources are allocated between Bjerg and Doublelift next split</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/fnc.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-user">Stunflower</div>
+										<div class="talk-demo-chat-timestamp">25m ago</div>
+									</div>
+									<div class="talk-demo-chat-message">I wonder how long the Asian teams were in SJ though. They might’ve been jet-lagged.</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item talk-demo-chat-self transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/skt.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-timestamp">21m ago</div>
+										<div class="talk-demo-chat-user">RokaK</div>
+									</div>
+									<div class="talk-demo-chat-message">Not sure, but I’d think the org would give them plenty of time to prep</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/clg.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-user">oChaos</div>
+										<div class="talk-demo-chat-timestamp">7m ago</div>
+									</div>
+									<div class="talk-demo-chat-message">CLG CLG CLG</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="talk-demo-player" class="talk-demo-item transition-whoosh">
+					<div class="talk-demo-background"><img class="fit-width" src="assets/img/thumbnails/faker_cover.png" /></div>
+					<div class="talk-demo-overlay"></div>
+					<div class="container clearfix">
+						<div class="talk-demo-content transition-whoosh">
+							<img class="fit-width" src="assets/img/shots/faker.png" />
+							<div class="talk-demo-title">Faker</div>
+							<div class="talk-demo-info clearfix">Midlaner at SKT T1</div>
+						</div>
+						<div id="talk-demo-match-chat" class="talk-demo-chat">
+							<div class="talk-demo-chat-item transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/c9.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-user">lobster</div>
+										<div class="talk-demo-chat-timestamp">27m ago</div>
+									</div>
+									<div class="talk-demo-chat-message">FAKER SENPAI</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/uol.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-user">TheSambasti</div>
+										<div class="talk-demo-chat-timestamp">22m ago</div>
+									</div>
+									<div class="talk-demo-chat-message">Look at his top played champs at Worlds. It's awesome what he's comfortable playing now.</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/fnc.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-user">Stunflower</div>
+										<div class="talk-demo-chat-timestamp">18m ago</div>
+									</div>
+									<div class="talk-demo-chat-message">irelia mid new meta?</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item talk-demo-chat-self transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/skt.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-timestamp">9m ago</div>
+										<div class="talk-demo-chat-user">RokaK</div>
+									</div>
+									<div class="talk-demo-chat-message">Only Koreans can pull that off</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/c9.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-user">lobster</div>
+										<div class="talk-demo-chat-timestamp">4m ago</div>
+									</div>
+									<div class="talk-demo-chat-message">Only faker can pull that off</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="talk-demo-team" class="talk-demo-item transition-whoosh">
+					<div class="talk-demo-background"><img class="fit-width" src="assets/img/thumbnails/skt_cover.png" /></div>
+					<div class="talk-demo-overlay"></div>
+					<div class="container clearfix">
+						<div class="talk-demo-content transition-whoosh">
+							<img class="fit-width" src="assets/img/shots/skt.png" />
+							<div class="talk-demo-title">SKT T1</div>
+							<div class="talk-demo-info clearfix">1st Place in World Championship 2015</div>
+						</div>
+						<div id="talk-demo-match-chat" class="talk-demo-chat">
+							<div class="talk-demo-chat-item transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/cj.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-user">oChaos</div>
+										<div class="talk-demo-chat-timestamp">3h ago</div>
+									</div>
+									<div class="talk-demo-chat-message">Donec id elit non mi porta gravida at eget.</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/kt.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-user">dadefakerpawn</div>
+										<div class="talk-demo-chat-timestamp">18m ago</div>
+									</div>
+									<div class="talk-demo-chat-message">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/koo.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-user">iDiscarded</div>
+										<div class="talk-demo-chat-timestamp">18m ago</div>
+									</div>
+									<div class="talk-demo-chat-message">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item talk-demo-chat-self transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/skt.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-timestamp">3m ago</div>
+										<div class="talk-demo-chat-user">RokaK</div>
+									</div>
+									<div class="talk-demo-chat-message">Praesent commodo cursus</div>
+								</div>
+							</div>
+							<div class="talk-demo-chat-item transition-whoosh clearfix">
+								<div class="talk-demo-chat-flair"><img class="fit-parent" src="assets/img/thumbnails/kt.png" /></div>
+								<div class="talk-demo-chat-content clearfix">
+									<div class="talk-demo-chat-info clearfix">
+										<div class="talk-demo-chat-user">dadefakerpawn</div>
+										<div class="talk-demo-chat-timestamp">Just Now</div>
+									</div>
+									<div class="talk-demo-chat-message">Sed posuere consectetur est at lobortis.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="action">
+		<div class="container">
+			<h1 id="action-title">Put eSports in your pocket.</h1>
+			<p id="action-subtitle">Download the free Instant eSports app now!</p>
+			<div class="cover-livetext">
+				<input type="tel" class="cover-livetext-input" placeholder="(123) 456-7890" />
+				<button class="cover-livetext-submit">Get the App</button>
+				<div class="clearfix"></div>
+			</div>
+			<div class="cover-download">
+				<div class="cover-download-item"><a href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229?mt=8" target="_blank"><img class="fit-height" src="assets/img/icons/app_store.png" /></a></div>
+				<div class="cover-download-item"><a href="https://play.google.com/store/apps/details?id=com.androidapp.instantesports.ies_android" target="_blank"><img class="fit-height" src="assets/img/icons/play_store.png" /></a></div>
+			</div>
+		</div>
+	</section>
+	<section id="footer">
+		<div class="container clearfix">
+			<div id="footer-logo" class="clearfix">
+				<div id="footer-logo-icon"><img class="fit-width" src="assets/img/icons/logo_red.png" /></div>
+				<div id="footer-logo-text">Instant eSports</div>
+			</div>
+			<div id="footer-copyright">© 2015 All Rights Reserved</div>
+			<div id="footer-extra" class="clearfix">
+				<div id="footer-link" class="clearfix">
+					<a href="mailto:team@instantesports.com" target="_blank"><div class="footer-link-item">Feedback</div></a>
+					<a href="mailto:joanna@instantesports.com" target="_blank"><div class="footer-link-item">Business Inquiry</div></a>
+				</div>
+				<div id="footer-social" class="clearfix">
+					<div class="footer-link-social"><a href="https://www.facebook.com/instantesports" target="_blank"><img class="fit-parent" src="assets/img/icons/facebook.png" /></a></div>
+					<div class="footer-link-social"><a href="https://twitter.com/instantesports" target="_blank"><img class="fit-parent" src="assets/img/icons/twitter.png" /></a></div>
+				</div>
+			</div>
+		</div>
+		<div id="footnote">Made with Lots of Love and League at Berkeley, CA.</div>
+	</section>
+</body>
 </html>
