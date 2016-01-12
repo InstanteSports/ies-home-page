@@ -114,9 +114,11 @@ $(document).ready(function(){
     	console.log("Button pushed");
         if ($.trim(telInput.val())) {
             if (telInput.intlTelInput("isValidNumber")) {
+            	console.log("Valid number");
                 $.post("http://instant-esports-static.herokuapp.com/text_download/",
                     JSON.stringify({"phone_number": telInput.intlTelInput("getNumber")}),
                     function (data) {
+                    	console.log("Success");
                     	telInput.hide();
                     	errMsg.hide();
                     	$('.cover-livetext-submit').hide();
