@@ -106,20 +106,22 @@ $(document).ready(function(){
 		center: true
 	});
 
-	var telInput = $('.cover-livetext-input');
+	var telInputOne = $('#cover-tel-1');
+	var telInputTwo = $('#cover-tel-2');
 	var errMsg = $('.error-message');
 	var successMsg = $('.text-success');
 
-	    $('.cover-livetext-submit').click(function() {
+    $('.cover-livetext-submit').click(function() {
     	console.log("Button pushed");
-        if ($.trim(telInput.val())) {
-            if (telInput.intlTelInput("isValidNumber")) {
+        if ($.trim(telInputOne.val())) {
+            if (telInputOne.intlTelInput("isValidNumber")) {
             	console.log("Valid number");
                 $.post("http://instant-esports-static.herokuapp.com/text_download/",
-                    JSON.stringify({"phone_number": telInput.intlTelInput("getNumber")}),
+                    JSON.stringify({"phone_number": telInputOne.intlTelInput("getNumber")}),
                     function (data) {
                     	console.log("Success");
-                    	telInput.hide();
+                    	telInputOne.hide();
+                    	telInputTwo.hide()
                     	errMsg.hide();
                     	$('.cover-livetext-submit').hide();
                     	$('.text-success').show();
@@ -127,19 +129,50 @@ $(document).ready(function(){
                     }
                 );
             } else {
-              telInput.addClass("error");
+              telInputOne.addClass("error");
+              errMsg.show();
+            }
+        }
+        if ($.trim(telInputTwo.val())) {
+            if (telInputTwo.intlTelInput("isValidNumber")) {
+            	console.log("Valid number");
+                $.post("http://instant-esports-static.herokuapp.com/text_download/",
+                    JSON.stringify({"phone_number": telInputTwo.intlTelInput("getNumber")}),
+                    function (data) {
+                    	console.log("Success");
+                    	telInputOne.hide();
+                    	telInputTwo.hide();
+                    	errMsg.hide();
+                    	$('.cover-livetext-submit').hide();
+                    	$('.text-success').show();
+                    	$('.flag-container').hide();
+                    }
+                );
+            } else {
+              telInputTwo.addClass("error");
               errMsg.show();
             }
         }
     })
 
-    telInput.blur(function() {
-	  if ($.trim(telInput.val())) {
-	    if (telInput.intlTelInput("isValidNumber")) {
-	    	telInput.removeClass("error");
+    telInputOne.blur(function() {
+	  if ($.trim(telInputOne.val())) {
+	    if (telInputOne.intlTelInput("isValidNumber")) {
+	    	telInputOne.removeClass("error");
 	    	errMsg.hide();
 	    } else {
-	      telInput.addClass("error");
+	      telInputOne.addClass("error");
+	      errMsg.show();
+	    }
+	}});
+
+	telInputTwo.blur(function() {
+	  if ($.trim(telInputTwo.val())) {
+	    if (telInputTwo.intlTelInput("isValidNumber")) {
+	    	telInputTwo.removeClass("error");
+	    	errMsg.hide();
+	    } else {
+	      telInputTwo.addClass("error");
 	      errMsg.show();
 	    }
 	}});
