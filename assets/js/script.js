@@ -110,7 +110,7 @@ $(document).ready(function(){
 	var telInputTwo = $('#cover-tel-2');
 	var errMsg = $('.error-message');
 	var successMsg = $('.text-success');
-	var bool1 = true;
+	var bool = true;
 
     $('.cover-livetext-submit').click(function() {
     	if (bool) {
