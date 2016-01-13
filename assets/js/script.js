@@ -110,43 +110,48 @@ $(document).ready(function(){
 	var telInputTwo = $('#cover-tel-2');
 	var errMsg = $('.error-message');
 	var successMsg = $('.text-success');
+	var bool1 = true;
 
     $('.cover-livetext-submit').click(function() {
-    	console.log("Button pushed");
-        if ($.trim(telInputOne.val())) {
-            if (telInputOne.intlTelInput("isValidNumber")) {
-            	console.log("Valid number");
-                $.post("http://instant-esports-static.herokuapp.com/text_download/",
-                    JSON.stringify({"phone_number": telInputOne.intlTelInput("getNumber")}),
-                    function (data) {
-                    	errMsg.hide();
-                    	alert("A download link has been sent to your phone!");
-                    	$('.text-success').show();
-                    	$('.flag-container').hide();
-                    }
-                );
-            } else {
-              telInputOne.addClass("error");
-              errMsg.show();
-            }
-        }
-        if ($.trim(telInputTwo.val())) {
-            if (telInputTwo.intlTelInput("isValidNumber")) {
-            	console.log("Valid number");
-                $.post("http://instant-esports-static.herokuapp.com/text_download/",
-                    JSON.stringify({"phone_number": telInputTwo.intlTelInput("getNumber")}),
-                    function (data) {
-                    	errMsg.hide();
-                    	alert("A download link has been sent to your phone!");
-                    	$('.text-success').show();
-                    	$('.flag-container').hide();
-                    }
-                );
-            } else {
-              telInputTwo.addClass("error");
-              errMsg.show();
-            }
-        }
+    	if (bool) {
+    		bool = false;
+	    	console.log("Button pushed");
+	        if ($.trim(telInputOne.val())) {
+	            if (telInputOne.intlTelInput("isValidNumber")) {
+	            	console.log("Valid number");
+                	alert("A download link has been sent to your phone! See you on the fields of justice.");
+	                $.post("http://instant-esports-static.herokuapp.com/text_download/",
+	                    JSON.stringify({"phone_number": telInputOne.intlTelInput("getNumber")}),
+	                    function (data) {
+	                    	errMsg.hide();
+	                    	$('.text-success').show();
+	                    	$('.flag-container').hide();
+	                    }
+	                );
+	            } else {
+	              telInputOne.addClass("error");
+	              errMsg.show();
+	            }
+	        }
+	        if ($.trim(telInputTwo.val())) {
+	            if (telInputTwo.intlTelInput("isValidNumber")) {
+	            	console.log("Valid number");
+                	alert("A download link has been sent to your phone! See you on the fields of justice.");
+	                $.post("http://instant-esports-static.herokuapp.com/text_download/",
+	                    JSON.stringify({"phone_number": telInputTwo.intlTelInput("getNumber")}),
+	                    function (data) {
+	                    	errMsg.hide();
+	                    	$('.text-success').show();
+	                    	$('.flag-container').hide();
+	                    }
+	                );
+	            } else {
+	              telInputTwo.addClass("error");
+	              errMsg.show();
+	            }
+	        }
+    	}
+    	bool = true;
     })
 
     telInputOne.blur(function() {
