@@ -50,6 +50,24 @@
     ga('create', 'UA-58734350-3', 'auto');
     ga('send', 'pageview');
 
+    var trackOutboundAndroid = function(url) {
+        console.log(url)
+        twttr.conversion.trackPid('l6g6b', { tw_sale_amount: 1, tw_order_quantity: 1 });
+        ga('send', 'event', 'outbound', 'click', 'android_app', 3, {
+            'hitCallback': function() {
+                document.location = url;
+            }
+        });
+    }
+    var trackOutboundIOS = function(url) {
+        console.log(url)
+        twttr.conversion.trackPid('l6g68', { tw_sale_amount: 1, tw_order_quantity: 1 });
+        ga('send', 'event', 'outbound', 'click', 'iOS_app', 3, {
+            'hitCallback': function() {
+                document.location = url;
+            }
+        });
+    }
   </script>
 
 <div id="cover-background">
@@ -460,8 +478,8 @@
 				<div class="clearfix"></div>
 			</div>
 			<div class="cover-download">
-				<div class="cover-download-item"><a href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229?mt=8" target="_blank"><img class="fit-height" src="assets/img/icons/app_store.png" /></a></div>
-				<div class="cover-download-item"><a href="https://play.google.com/store/apps/details?id=com.androidapp.instantesports.ies_android" target="_blank"><img class="fit-height" src="assets/img/icons/play_store.png" /></a></div>
+				<div class="cover-download-item"><a href="https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229?mt=8" onclick="trackOutboundIOS('https://itunes.apple.com/us/app/instant-esports-esports-news/id908957229?mt=8'); return false; "target="_blank"><img class="fit-height" src="assets/img/icons/app_store.png" /></a></div>
+				<div class="cover-download-item"><a href="https://play.google.com/store/apps/details?id=com.androidapp.instantesports.ies_android" onclick="trackOutboundAndroid('https://play.google.com/store/apps/details?id=com.androidapp.instantesports.ies_android'); return false;" target="_blank"><img class="fit-height" src="assets/img/icons/play_store.png" /></a></div>
 			</div>
 		</div>
 	</section>
