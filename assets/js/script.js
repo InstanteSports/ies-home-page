@@ -132,6 +132,7 @@ $(document).ready(function(){
 	              telInputOne.addClass("error");
 	              errMsg.show();
 	            }
+              ga('send', 'event', 'tel-send-top', 'click', 4)
 	        }
 	        if ($.trim(telInputTwo.val())) {
 	            if (telInputTwo.intlTelInput("isValidNumber")) {
@@ -149,6 +150,7 @@ $(document).ready(function(){
 	              telInputTwo.addClass("error");
 	              errMsg.show();
 	            }
+              ga('send', 'event', 'tel-send-bottom', 'click', 4)
 	        }
     	}
     	bool = true;
