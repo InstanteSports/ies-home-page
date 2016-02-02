@@ -4,8 +4,8 @@ function cycle_cover() {
 	
 	$('.cover-title-feature-post').addClass('cover-title-feature-pre').removeClass('cover-title-feature-post');
 	
-	if (cycle_count == 5) {
-		var current_header = $('.cover-title-feature:nth-child(5)');
+	if (cycle_count == 4) {
+		var current_header = $('.cover-title-feature:nth-child(4)');
 		var new_header = $('.cover-title-feature:nth-child(1)');
 
 		// var current_background = $('.cover-background-item:nth-child(5)');
@@ -24,7 +24,7 @@ function cycle_cover() {
 	// current_background.removeClass('cover-background-active');
 	// new_background.addClass('cover-background-active');
 
-	if (cycle_count == 5) {
+	if (cycle_count == 4) {
 		cycle_count = 1;
 	} else {
 		cycle_count++;
