@@ -178,4 +178,20 @@ $(document).ready(function(){
 	    }
 	}});
 
+	$('#cover-shot-play').click(function(){
+		$('.video-modal').show();
+		$('body').css('overflow', 'hidden');
+		setTimeout(function(){
+			$('.video-modal').addClass('video-modal-active');
+		}, 100);
+	});
+
+	$('#video-modal-close').click(function(){
+		$('.video-modal').removeClass('video-modal-active');
+		setTimeout(function(){
+			$('.video-modal').hide();
+		}, 100);
+		$('body').css('overflow', 'visible');
+	});
+
 });
