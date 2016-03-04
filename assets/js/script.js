@@ -183,6 +183,8 @@ $(document).ready(function(){
 		$('body').css('overflow', 'hidden');
 		setTimeout(function(){
 			$('.video-modal').addClass('video-modal-active');
+			$('.video iframe')[0].src += "?autoplay=1";
+    		ev.preventDefault();
 		}, 100);
 	});
 
@@ -190,6 +192,7 @@ $(document).ready(function(){
 		$('.video-modal').removeClass('video-modal-active');
 		setTimeout(function(){
 			$('.video-modal').hide();
+			$('.video iframe')[0].src = "https://www.youtube.com/embed/avp88BujPy0";
 		}, 100);
 		$('body').css('overflow', 'visible');
 	});
